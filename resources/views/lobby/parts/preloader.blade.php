@@ -1,4 +1,3 @@
-<div class="page-preloader preloader-wrapp" style="display: none;">
-
-
+<div class="page-preloader preloader-wrapp" style="">
+    <div class="preloader"></div>
 </div>
