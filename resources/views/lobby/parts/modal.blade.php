@@ -1,4 +1,5 @@
-<div class="lwa"><div class="lwa-register lwa-register-default lwa-modal modal-dialog" style="display:none;">
+<div class="lwa">
+    <div class="lwa-register lwa-register-default lwa-modal modal-dialog" style="display:none;">
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close lwa-modal-close"><span aria-hidden="true">×</span></button>
@@ -10,15 +11,17 @@
                         <span class="lwa-status"></span>
 
                         <p>
-                            Username:                        </p>
+                            Username: </p>
                         <div class="youplay-input">
-                            <input type="text" name="user_login" id="user_login-1" class="input" size="20" tabindex="10">
+                            <input type="text" name="user_login" id="user_login-1" class="input" size="20"
+                                   tabindex="10">
                         </div>
 
                         <p>
-                            E-mail:                        </p>
+                            E-mail: </p>
                         <div class="youplay-input">
-                            <input type="text" name="user_email" id="user_email-1" class="input" size="25" tabindex="20">
+                            <input type="text" name="user_email" id="user_email-1" class="input" size="25"
+                                   tabindex="20">
                         </div>
 
 
