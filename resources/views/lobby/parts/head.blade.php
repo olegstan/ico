@@ -477,4 +477,11 @@
         padding-right: 10px;
     }</style>
 
-
+<script>window.wsHost = "api.spin2spin.com";
+    window.wsPort = "443";
+    window.isAuth = "false";
+    window.userHash = "demo";
+    window.userHallId = "lHzuDj7p2D";
+    window.redirectHost = "http://google.ru";
+    window.openedGamesArr = [];
+    window.demoEnabled = true;</script>

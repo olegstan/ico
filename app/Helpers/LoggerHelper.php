@@ -32,7 +32,7 @@ class LoggerHelper
     public static function getLogger($key = 'default')
     {
         if(!isset(self::$loggers[$key])){
-            self::$loggers['default'] = Log::getMonolog();
+            self::$loggers['default'] = Log::getLogger();
             return self::$loggers['default'];
         }
         return self::$loggers[$key];

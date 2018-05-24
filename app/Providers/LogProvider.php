@@ -24,9 +24,8 @@ class LogProvider extends ServiceProvider
     public function boot()
     {
         if(!App::runningInConsole() && env('EXTENDED_LOG', false)){
-            $key = Request::server('HTTP_REFERER');
 
-            $monolog = Log::getMonolog();
+            $monolog = Log::getLogger();
             LoggerHelper::rememberLogger($monolog);
             /**
              * @var Logger $monologQuery
@@ -49,44 +48,25 @@ class LogProvider extends ServiceProvider
             $monologSystem = new Logger('system');
             LoggerHelper::rememberLogger($monologSystem, 'system');
 
-            $path = storage_path('logs/' . $this->prepareKey($key));
+            $path = storage_path('logs/');
             if(!File::exists($path)){
                 File::makeDirectory($path, 0777, true, true);
             }
 
+            if(function_exists('posix_geteuid')){
+                $processUser = posix_getpwuid( posix_geteuid() );
+                $processName= $processUser[ 'name' ];
 
-
-            if($key && in_array($key, [
-                    'admin',
-                    'customer',
-                    'seller'
-                ])){
-                if(function_exists('posix_geteuid')){
-                    $processUser = posix_getpwuid( posix_geteuid() );
-                    $processName= $processUser[ 'name' ];
-
-                    $filename = $path . '/laravel-' . php_sapi_name() . '-' . $processName . '.log';
-                    $this->setHandler($monolog, $filename);
-                    $filename = $path . '/query-' . php_sapi_name() . '-' . $processName . '.log';
-                    $this->setHandler($monologQuery, $filename);
-                    $filename = $path . '/validation-' . php_sapi_name() . '-' . $processName . '.log';
-                    $this->setHandler($monologValidation, $filename);
-                    $filename = $path . '/helper-' . php_sapi_name() . '-' . $processName . '.log';
-                    $this->setHandler($monologHelper, $filename);
-                    $filename = $path . '/system-' . php_sapi_name() . '-' . $processName . '.log';
-                    $this->setHandler($monologSystem, $filename);
-                }else{
-                    $filename = $path . '/laravel.log';
-                    $this->setHandler($monolog, $filename);
-                    $filename = $path . '/query.log';
-                    $this->setHandler($monologQuery, $filename);
-                    $filename = $path . '/validation.log';
-                    $this->setHandler($monologValidation, $filename);
-                    $filename = $path . '/helper.log';
-                    $this->setHandler($monologHelper, $filename);
-                    $filename = $path . '/system.log';
-                    $this->setHandler($monologSystem, $filename);
-                }
+                $filename = $path . '/laravel-' . php_sapi_name() . '-' . $processName . '.log';
+                $this->setHandler($monolog, $filename);
+                $filename = $path . '/query-' . php_sapi_name() . '-' . $processName . '.log';
+                $this->setHandler($monologQuery, $filename);
+                $filename = $path . '/validation-' . php_sapi_name() . '-' . $processName . '.log';
+                $this->setHandler($monologValidation, $filename);
+                $filename = $path . '/helper-' . php_sapi_name() . '-' . $processName . '.log';
+                $this->setHandler($monologHelper, $filename);
+                $filename = $path . '/system-' . php_sapi_name() . '-' . $processName . '.log';
+                $this->setHandler($monologSystem, $filename);
             }else{
                 $filename = $path . '/laravel.log';
                 $this->setHandler($monolog, $filename);
@@ -99,6 +79,7 @@ class LogProvider extends ServiceProvider
                 $filename = $path . '/system.log';
                 $this->setHandler($monologSystem, $filename);
             }
+
 
 //        if(env('APP_ENV') === 'local'){
             DB::listen(function($sql)

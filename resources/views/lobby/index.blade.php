@@ -33,15 +33,6 @@
                                                     <div class="vc_column-inner vc_custom_1515053762226">
                                                         <div class="wpb_wrapper">
                                                             <div class=" container">
-                                                                <script>window.wsHost = "api.spin2spin.com";
-                                                                    window.wsPort = "443";
-                                                                    window.isAuth = "false";
-                                                                    window.userHash = "demo";
-                                                                    window.userHallId = "lHzuDj7p2D";
-                                                                    window.redirectHost = "http://google.ru";
-                                                                    window.openedGamesArr = [];
-                                                                    window.demoEnabled = true;</script>
-
                                                                 <div class="jackpots_div">
                                                                     <section class="jackpots">
                                                                         <section style="" class="jackpot"

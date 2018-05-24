@@ -1,5 +1,5 @@
 <?php
-namespace App;
+namespace App\Models;
 
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -23,7 +23,9 @@ class User extends Authenticatable
     protected $hidden = ['password', 'remember_token'];
     
     
-    
+    CONST ADMIN = 1;
+    CONST GAMER = 2;
+
     /**
      * Hash password
      * @param $input

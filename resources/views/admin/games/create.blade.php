@@ -22,6 +22,18 @@
                     @endif
                 </div>
             </div>
+            <div class="row">
+                <div class="col-xs-12 form-group">
+                    {!! Form::label('need_users', trans('quickadmin.games.fields.need_users').'*', ['class' => 'control-label']) !!}
+                    {!! Form::text('need_users', old('need_users'), ['class' => 'form-control', 'placeholder' => '', 'required' => '']) !!}
+                    <p class="help-block"></p>
+                    @if($errors->has('need_users'))
+                        <p class="help-block">
+                            {{ $errors->first('need_users') }}
+                        </p>
+                    @endif
+                </div>
+            </div>
         </div>
     </div>
 
