@@ -16,22 +16,23 @@
         <div id="navbar" class="navbar-collapse collapse">
             <ul id="menu-main" class="nav navbar-nav">
                 <li id="menu-item-834" class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                            href="http://spin2spin.com/main-copy/" role="button" aria-expanded="false">About Us</a></li>
+                            href="" role="button" aria-expanded="false">About Us</a></li>
                 <li id="menu-item-842" class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                            href="http://spin2spin.com/games/" role="button" aria-expanded="false">Games</a></li>
-                <li id="menu-item-993" class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                            href="http://spin2spin.com/get-a-bonus/" role="button" aria-expanded="false">Get a BONUS</a>
+                            href="{{ route('games') }}" role="button" aria-expanded="false">Games</a></li>
+                <li id="menu-item-993" class="menu-item menu-item-type-post_type menu-item-object-page">
+                    <a href="" role="button" aria-expanded="false">Get a BONUS</a>
                 </li>
                 <li id="menu-item-836" class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                            href="http://spin2spin.com/payment/" role="button" aria-expanded="false">Payment</a></li>
+                            href="" role="button" aria-expanded="false">Payment</a></li>
                 <li id="menu-item-1202" class="menu-item menu-item-type-post_type menu-item-object-page"><a
-                            href="http://spin2spin.com/support-2/" role="button" aria-expanded="false">Support</a></li>
+                            href="" role="button" aria-expanded="false">Support</a></li>
             </ul>
 
 
             <ul class="nav navbar-nav navbar-right">
-                <li class="search-toggle"><a href="javascript:void(0)" role="button" aria-expanded="false"><span
-                                class="fa fa-search"></span></a></li>
+                <li class="search-toggle">
+                    <a href="javascript:void(0)" role="button" aria-expanded="false">
+                        <span class="fa fa-search"></span></a></li>
             </ul>
 
 

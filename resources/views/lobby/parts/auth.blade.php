@@ -9,7 +9,7 @@
         <div class="dropdown-menu pb-20" style="width: 300px;">
             <div class="block-content m-20 mnb-10 mt-0">
                 <div class="lwa lwa-default">
-                    <form class="lwa-form block-content" action="http://spin2spin.com/auth_login/"
+                    <form class="lwa-form block-content" action="/auth_login/"
                           method="post">
 
                         <span class="lwa-status"></span>
@@ -45,16 +45,16 @@
 
                         <p></p>
                         <a class="lwa-links-remember no-fade"
-                           href="http://spin2spin.com/auth_login/?action=lostpassword"
+                           href="/auth_login/?action=lostpassword"
                            title="Password Lost and Found">Lost password?</a>
 
                         |
-                        <a href="http://spin2spin.com/register-2/"
+                        <a href="/register-2/"
                            class="lwa-links-register lwa-links-modal no-fade">Register</a>
 
                     </form>
                     <form class="lwa-remember block-content"
-                          action="http://spin2spin.com/auth_login/?action=lostpassword" method="post"
+                          action="/auth_login/?action=lostpassword" method="post"
                           style="display:none;">
                         <div>
                             <span class="lwa-status"></span>

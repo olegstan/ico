@@ -2,19 +2,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="http://spin2spin.com/xmlrpc.php">
+<link rel="pingback" href="/xmlrpc.php">
 
 <link rel="shortcut icon" href="http://mosgorinvest.ru/wp-content/uploads/2017/12/fav_spin-1.png">
 
 <title>Spin2Spin – BTC Casino</title>
 <link rel="dns-prefetch" href="//fonts.googleapis.com">
 <link rel="dns-prefetch" href="//s.w.org">
-<link rel="alternate" type="application/rss+xml" title="Spin2Spin » Feed" href="http://spin2spin.com/feed/">
+<link rel="alternate" type="application/rss+xml" title="Spin2Spin » Feed" href="/feed/">
 <link rel="alternate" type="application/rss+xml" title="Spin2Spin » Comments Feed"
-      href="http://spin2spin.com/comments/feed/">
+      href="/comments/feed/">
 <link rel="alternate" type="application/rss+xml" title="Spin2Spin » Home Comments Feed"
-      href="http://spin2spin.com/main/feed/">
-<script type="text/javascript" async="" src=""></script>
+      href="/main/feed/">
+<script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
 <script type="text/javascript">
     window._wpemojiSettings = {
         "baseUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/",
@@ -64,7 +64,7 @@
         })), g = c.source || {}, g.concatemoji ? f(g.concatemoji) : g.wpemoji && g.twemoji && (f(g.twemoji), f(g.wpemoji)))
     }(window, document, window._wpemojiSettings);
 </script>
-<script src="http://spin2spin.com/wp-includes/js/wp-emoji-release.min.js?ver=4.9.3" type="text/javascript"
+<script src="/wp-includes/js/wp-emoji-release.min.js?ver=4.9.3" type="text/javascript"
         defer=""></script>
 <style type="text/css">
     img.wp-smiley,
@@ -145,51 +145,51 @@
         padding: 15px;
     }</style>
 <link rel="stylesheet" id="login-with-ajax-css"
-      href="http://spin2spin.com/wp-content/themes/youplay/plugins/login-with-ajax/widget.css?ver=3.1.7" type="text/css"
+      href="/wp-content/themes/youplay/plugins/login-with-ajax/widget.css?ver=3.1.7" type="text/css"
       media="all">
 <link rel="stylesheet" id="ot-google-fonts-css" href="//fonts.googleapis.com/css?family=Lato:300,regular,700"
       type="text/css" media="all">
 <link rel="stylesheet" id="bp-parent-css-css"
-      href="http://spin2spin.com/wp-content/themes/youplay/buddypress/css/buddypress.css?ver=2.9.3" type="text/css"
+      href="/wp-content/themes/youplay/buddypress/css/buddypress.css?ver=2.9.3" type="text/css"
       media="screen">
 <link rel="stylesheet" id="contact-form-7-css"
-      href="http://spin2spin.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0" type="text/css"
+      href="/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.0" type="text/css"
       media="all">
 <link rel="stylesheet" id="rs-plugin-settings-css"
-      href="http://spin2spin.com/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.6.3.1"
+      href="/wp-content/plugins/revslider/public/assets/css/settings.css?ver=5.4.6.3.1"
       type="text/css" media="all">
 <style id="rs-plugin-settings-inline-css" type="text/css">
     #rs-demo-id {
     }
 </style>
 <link rel="stylesheet" id="spin2spin_jackpot_plugin_lobby-css"
-      href="http://spin2spin.com/wp-content/plugins/spin2spin-plugin/assets/css/lobby.css?ver=4.9.3" type="text/css"
+      href="/wp-content/plugins/spin2spin-plugin/assets/css/lobby.css?ver=4.9.3" type="text/css"
       media="all">
 <link rel="stylesheet" id="wpm-main-css"
       href="//spin2spin.com/wp-content/plugins/wp-multilang/assets/styles/main.min.css?ver=2.1.12" type="text/css"
       media="all">
-<link rel="stylesheet" id="youtplay-css" href="http://spin2spin.com/wp-content/themes/youplay/style.css?ver=4.9.3"
+<link rel="stylesheet" id="youtplay-css" href="/wp-content/themes/youplay/style.css?ver=4.9.3"
       type="text/css" media="all">
 <link rel="stylesheet" id="bootstrap-css"
-      href="http://spin2spin.com/wp-content/themes/youplay/assets/bower_components/bootstrap/dist/css/bootstrap.min.css?ver=4.9.3"
+      href="/wp-content/themes/youplay/assets/bower_components/bootstrap/dist/css/bootstrap.min.css?ver=4.9.3"
       type="text/css" media="all">
 <link rel="stylesheet" id="fontawesome-css"
-      href="http://spin2spin.com/wp-content/themes/youplay/assets/bower_components/font-awesome/css/font-awesome.min.css?ver=4.9.3"
+      href="/wp-content/themes/youplay/assets/bower_components/font-awesome/css/font-awesome.min.css?ver=4.9.3"
       type="text/css" media="all">
 <link rel="stylesheet" id="magnific-popup-css"
-      href="http://spin2spin.com/wp-content/themes/youplay/assets/bower_components/magnific-popup/dist/magnific-popup.css?ver=4.9.3"
+      href="/wp-content/themes/youplay/assets/bower_components/magnific-popup/dist/magnific-popup.css?ver=4.9.3"
       type="text/css" media="all">
 <link rel="stylesheet" id="owl.carousel-css"
-      href="http://spin2spin.com/wp-content/themes/youplay/assets/bower_components/owl.carousel/dist/assets/owl.carousel.min.css?ver=4.9.3"
+      href="/wp-content/themes/youplay/assets/bower_components/owl.carousel/dist/assets/owl.carousel.min.css?ver=4.9.3"
       type="text/css" media="all">
 <link rel="stylesheet" id="social-likes-css"
-      href="http://spin2spin.com/wp-content/themes/youplay/assets/bower_components/social-likes/dist/social-likes_flat.css?ver=4.9.3"
+      href="/wp-content/themes/youplay/assets/bower_components/social-likes/dist/social-likes_flat.css?ver=4.9.3"
       type="text/css" media="all">
 <link rel="stylesheet" id="youplay-style-custom-css"
-      href="http://spin2spin.com/wp-content/uploads/nk-custom-styles/youplay-custom.min.css?ver=1519635428"
+      href="/wp-content/uploads/nk-custom-styles/youplay-custom.min.css?ver=1519635428"
       type="text/css" media="all">
 <link rel="stylesheet" id="youplay-style-wp-css"
-      href="http://spin2spin.com/wp-content/themes/youplay/assets/css/wp-youplay.css?ver=4.9.3" type="text/css"
+      href="/wp-content/themes/youplay/assets/css/wp-youplay.css?ver=4.9.3" type="text/css"
       media="all">
 <style id="youplay-style-wp-inline-css" type="text/css">
 
@@ -307,33 +307,33 @@
     }
 </style>
 <link rel="stylesheet" id="js_composer_front-css"
-      href="http://spin2spin.com/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.4.5"
+      href="/wp-content/plugins/js_composer/assets/css/js_composer.min.css?ver=5.4.5"
       type="text/css" media="all">
-<script type="text/javascript" src="http://spin2spin.com/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
+<script type="text/javascript" src="/wp-includes/js/jquery/jquery.js?ver=1.12.4"></script>
 <script type="text/javascript"
-        src="http://spin2spin.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
+        src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
 <script type="text/javascript">
     /* <![CDATA[ */
     var LWA = {"ajaxurl": "http:\/\/spin2spin.com\/wp-admin\/admin-ajax.php"};
     /* ]]> */
 </script>
 <script type="text/javascript"
-        src="http://spin2spin.com/wp-content/themes/youplay/plugins/login-with-ajax/login-with-ajax.js?ver=3.1.7"></script>
+        src="/wp-content/themes/youplay/plugins/login-with-ajax/login-with-ajax.js?ver=3.1.7"></script>
 <script type="text/javascript">
     /* <![CDATA[ */
     var BP_Confirm = {"are_you_sure": "Are you sure?"};
     /* ]]> */
 </script>
 <script type="text/javascript"
-        src="http://spin2spin.com/wp-content/plugins/buddypress/bp-core/js/confirm.min.js?ver=2.9.3"></script>
+        src="/wp-content/plugins/buddypress/bp-core/js/confirm.min.js?ver=2.9.3"></script>
 <script type="text/javascript"
-        src="http://spin2spin.com/wp-content/plugins/buddypress/bp-core/js/widget-members.min.js?ver=2.9.3"></script>
+        src="/wp-content/plugins/buddypress/bp-core/js/widget-members.min.js?ver=2.9.3"></script>
 <script type="text/javascript"
-        src="http://spin2spin.com/wp-content/plugins/buddypress/bp-core/js/jquery-query.min.js?ver=2.9.3"></script>
+        src="/wp-content/plugins/buddypress/bp-core/js/jquery-query.min.js?ver=2.9.3"></script>
 <script type="text/javascript"
-        src="http://spin2spin.com/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-cookie.min.js?ver=2.9.3"></script>
+        src="/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-cookie.min.js?ver=2.9.3"></script>
 <script type="text/javascript"
-        src="http://spin2spin.com/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-scroll-to.min.js?ver=2.9.3"></script>
+        src="/wp-content/plugins/buddypress/bp-core/js/vendor/jquery-scroll-to.min.js?ver=2.9.3"></script>
 <script type="text/javascript">
     /* <![CDATA[ */
     var BP_DTheme = {
@@ -354,36 +354,36 @@
     /* ]]> */
 </script>
 <script type="text/javascript"
-        src="http://spin2spin.com/wp-content/themes/youplay/buddypress/js/buddypress.js?ver=2.9.3"></script>
+        src="/wp-content/themes/youplay/buddypress/js/buddypress.js?ver=2.9.3"></script>
 <script type="text/javascript"
-        src="http://spin2spin.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.6.3.1"></script>
+        src="/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.tools.min.js?ver=5.4.6.3.1"></script>
 <script type="text/javascript"
-        src="http://spin2spin.com/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.6.3.1"></script>
+        src="/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.6.3.1"></script>
 <script type="text/javascript"
-        src="http://spin2spin.com/wp-content/plugins/spin2spin-plugin/assets/js/jquery.min.js?ver=4.9.3"></script>
+        src="/wp-content/plugins/spin2spin-plugin/assets/js/jquery.min.js?ver=4.9.3"></script>
 <script type="text/javascript"
-        src="http://spin2spin.com/wp-content/plugins/spin2spin-plugin/assets/js/socket.js?ver=4.9.3"></script>
+        src="/wp-content/plugins/spin2spin-plugin/assets/js/socket.js?ver=4.9.3"></script>
 <script type="text/javascript"
-        src="http://spin2spin.com/wp-content/plugins/spin2spin-plugin/assets/js/jackpot.js?ver=4.9.3"></script>
-<link rel="https://api.w.org/" href="http://spin2spin.com/wp-json/">
-<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://spin2spin.com/xmlrpc.php?rsd">
-<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://spin2spin.com/wp-includes/wlwmanifest.xml">
+        src="/wp-content/plugins/spin2spin-plugin/assets/js/jackpot.js?ver=4.9.3"></script>
+<link rel="https://api.w.org/" href="/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="/wp-includes/wlwmanifest.xml">
 <meta name="generator" content="WordPress 4.9.3">
-<link rel="canonical" href="http://spin2spin.com/">
-<link rel="shortlink" href="http://spin2spin.com/">
+<link rel="canonical" href="/">
+<link rel="shortlink" href="/">
 <link rel="alternate" type="application/json+oembed"
-      href="http://spin2spin.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fspin2spin.com%2F">
+      href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fspin2spin.com%2F">
 <link rel="alternate" type="text/xml+oembed"
-      href="http://spin2spin.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fspin2spin.com%2F&amp;format=xml">
+      href="/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fspin2spin.com%2F&amp;format=xml">
 
-<script type="text/javascript">var ajaxurl = 'http://spin2spin.com/wp-admin/admin-ajax.php';</script>
+<script type="text/javascript">var ajaxurl = '/wp-admin/admin-ajax.php';</script>
 
-<link rel="alternate" hreflang="x-default" href="http://spin2spin.com/">
-<link rel="alternate" hreflang="en-us" href="http://spin2spin.com/">
+<link rel="alternate" hreflang="x-default" href="/">
+<link rel="alternate" hreflang="en-us" href="/">
 <meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress.">
 <!--[if lte IE 9]>
 <link rel="stylesheet" type="text/css"
-      href="http://spin2spin.com/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css"
+      href="/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css"
       media="screen"><![endif]-->
 <meta name="generator"
       content="Powered by Slider Revolution 5.4.6.3.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
@@ -476,12 +476,3 @@
         padding-left: 10px;
         padding-right: 10px;
     }</style>
-
-<script>window.wsHost = "api.spin2spin.com";
-    window.wsPort = "443";
-    window.isAuth = "false";
-    window.userHash = "demo";
-    window.userHallId = "lHzuDj7p2D";
-    window.redirectHost = "http://google.ru";
-    window.openedGamesArr = [];
-    window.demoEnabled = true;</script>

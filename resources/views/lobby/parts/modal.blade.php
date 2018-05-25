@@ -6,7 +6,7 @@
                 <h4 class="modal-title">Register</h4>
             </div>
             <div class="modal-body">
-                <form class="lwa-register-form" action="http://spin2spin.com/register-2/" method="post">
+                <form class="lwa-register-form" action="/register-2/" method="post">
                     <div>
                         <span class="lwa-status"></span>
 

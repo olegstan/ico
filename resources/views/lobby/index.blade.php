@@ -28,782 +28,9 @@
                                 <div class="wpb_column vc_column_container vc_col-sm-12">
                                     <div class="vc_column-inner ">
                                         <div class="wpb_wrapper">
-                                            <div class="vc_row wpb_row vc_inner vc_row-fluid">
-                                                <div class="wpb_column vc_column_container vc_col-sm-12 vc_col-has-fill">
-                                                    <div class="vc_column-inner vc_custom_1515053762226">
-                                                        <div class="wpb_wrapper">
-                                                            <div class=" container">
-                                                                <div class="jackpots_div">
-                                                                    <section class="jackpots">
-                                                                        <section style="" class="jackpot"
-                                                                                 id="jackpot_gold">
-                                                                            <section class="jackpot-name">
-                                                                                <section class="jackpot-name-text">
-                                                                                    Gold Jackpot
-                                                                                </section>
-                                                                            </section>
-                                                                            <section class="jackpot-value">
 
-                                                                                <section class="jackpot-value-group">
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-dia">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-dia">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-dia">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                </section>
-                                                                                <section class="jackpot-value-group">
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-dia">
-                                                                                        <section class="digits-drum"
-                                                                                                 digit="11">
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-dia">
-                                                                                        <section class="digits-drum"
-                                                                                                 digit="12">
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-dia">
-                                                                                        <section class="digits-drum"
-                                                                                                 digit="17">
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                </section>
-                                                                                <section
-                                                                                        class="jackpot-value-group-decimal">
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-dia">
-                                                                                        <section class="digits-drum"
-                                                                                                 digit="16">
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-dia">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-dia">
-                                                                                        <section class="digits-drum"
-                                                                                                 digit="11">
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                </section>
-                                                                            </section>
-                                                                        </section>
-                                                                        <section style="" class="jackpot"
-                                                                                 id="jackpot_silver">
-                                                                            <section class="jackpot-name">
-                                                                                <section class="jackpot-name-text">
-                                                                                    Silver jackpot
-                                                                                </section>
-                                                                            </section>
-                                                                            <section class="jackpot-value">
-
-                                                                                <section class="jackpot-value-group">
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-pla">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-pla">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-pla">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                </section>
-                                                                                <section class="jackpot-value-group">
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-pla">
-                                                                                        <section class="digits-drum"
-                                                                                                 digit="12">
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-pla">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-pla">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                </section>
-                                                                                <section
-                                                                                        class="jackpot-value-group-decimal">
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-pla">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-pla">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-pla">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                </section>
-                                                                            </section>
-                                                                        </section>
-                                                                        <section style="" class="jackpot"
-                                                                                 id="jackpot_bronze">
-                                                                            <section class="jackpot-name">
-                                                                                <section class="jackpot-name-text">
-                                                                                    Bronze jackpot
-                                                                                </section>
-                                                                            </section>
-                                                                            <section class="jackpot-value">
-
-                                                                                <section class="jackpot-value-group">
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-gol">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-gol">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-gol">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                </section>
-                                                                                <section class="jackpot-value-group">
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-gol">
-                                                                                        <section class="digits-drum"
-                                                                                                 digit="13">
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-gol">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-gol">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                </section>
-                                                                                <section
-                                                                                        class="jackpot-value-group-decimal">
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-gol">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-gol">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                    <section
-                                                                                            class="jackpot-digit jackpot-gol">
-                                                                                        <section class="digits-drum">
-                                                                                            <section class="digit">0
-                                                                                            </section>
-                                                                                            <section class="digit">1
-                                                                                            </section>
-                                                                                            <section class="digit">2
-                                                                                            </section>
-                                                                                            <section class="digit">3
-                                                                                            </section>
-                                                                                            <section class="digit">4
-                                                                                            </section>
-                                                                                            <section class="digit">5
-                                                                                            </section>
-                                                                                            <section class="digit">6
-                                                                                            </section>
-                                                                                            <section class="digit">7
-                                                                                            </section>
-                                                                                            <section class="digit">8
-                                                                                            </section>
-                                                                                            <section class="digit">9
-                                                                                            </section>
-                                                                                        </section>
-                                                                                    </section>
-                                                                                </section>
-                                                                            </section>
-                                                                        </section>
-                                                                    </section>
-                                                                </div>
-
-                                                                <script>
-                                                                    jQuery(document).ready(function ($) {
-                                                                        //resizeContent();
-
-                                                                        var jackpot_names = ['jackpot_gold', 'jackpot_silver', 'jackpot_bronze'];
-                                                                        var jackpot_values = [];
-
-                                                                        jackpot_values.push(127.6006250);
-                                                                        jackpot_values.push(200.0000000);
-                                                                        jackpot_values.push(300.0000000);
-
-                                                                        for (var i = 0; i < jackpot_values.length; ++i) {
-
-                                                                            $('#' + jackpot_names[i]).show();
-
-                                                                            setJackPot(i, jackpot_values[i]);
-
-                                                                        }
-
-                                                                    });
-                                                                </script>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
                                             <div class=" container">
-                                                <h2 class="h1">Popular Games&nbsp;<a class="btn pull-right"
-                                                                                     href="/games/" target="_self"> Show
-                                                        All </a></h2>
+                                                <h2 class="h1">Popular Games&nbsp;<a class="btn pull-right" href="/games/" target="_self"> Show All </a></h2>
                                             </div>
                                             <div class="youplay-carousel  owl-carousel owl-loaded owl-drag youplay-carousel-0"
                                                  data-stage-padding="70" data-item-padding="10" data-loop="true">
@@ -812,9 +39,9 @@
                                                          style="transform: translate3d(-1763px, 0px, 0px); transition: 0s; width: 7192px; padding-left: 70px; padding-right: 70px;">
                                                         <div class="owl-item cloned" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/fruit-fair-2-way/">
+                                                                    href="/fruit-fair-2-way/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/6.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/6.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -830,9 +57,9 @@
                                                             </a></div>
                                                         <div class="owl-item cloned" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/vikings-quest/">
+                                                                    href="/vikings-quest/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/20.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/20.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -848,9 +75,9 @@
                                                             </a></div>
                                                         <div class="owl-item cloned" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/mystic-oriental/">
+                                                                    href="/mystic-oriental/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/2.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/2.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -866,9 +93,9 @@
                                                             </a></div>
                                                         <div class="owl-item cloned" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/fortune-style/">
+                                                                    href="/fortune-style/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/4.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/4.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -884,9 +111,9 @@
                                                             </a></div>
                                                         <div class="owl-item active" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/lucky-casino/">
+                                                                    href="/lucky-casino/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/11.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/11.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -902,9 +129,9 @@
                                                             </a></div>
                                                         <div class="owl-item active" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/bulls-eye/">
+                                                                    href="/bulls-eye/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/22.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/22.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -920,9 +147,9 @@
                                                             </a></div>
                                                         <div class="owl-item active" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/underwater-treasures/">
+                                                                    href="/underwater-treasures/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/19.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/19.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -938,9 +165,9 @@
                                                             </a></div>
                                                         <div class="owl-item active" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/oriental-joy/">
+                                                                    href="/oriental-joy/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/13.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/13.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -956,9 +183,9 @@
                                                             </a></div>
                                                         <div class="owl-item" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/fruit-fair-2-way/">
+                                                                    href="/fruit-fair-2-way/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/6.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/6.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -974,9 +201,9 @@
                                                             </a></div>
                                                         <div class="owl-item" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/vikings-quest/">
+                                                                    href="/vikings-quest/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/20.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/20.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -992,9 +219,9 @@
                                                             </a></div>
                                                         <div class="owl-item" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/mystic-oriental/">
+                                                                    href="/mystic-oriental/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/2.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/2.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -1010,9 +237,9 @@
                                                             </a></div>
                                                         <div class="owl-item" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/fortune-style/">
+                                                                    href="/fortune-style/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/4.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/4.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -1028,9 +255,9 @@
                                                             </a></div>
                                                         <div class="owl-item cloned" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/lucky-casino/">
+                                                                    href="/lucky-casino/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/11.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/11.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -1046,9 +273,9 @@
                                                             </a></div>
                                                         <div class="owl-item cloned" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/bulls-eye/">
+                                                                    href="/bulls-eye/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/22.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/22.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -1064,9 +291,9 @@
                                                             </a></div>
                                                         <div class="owl-item cloned" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/underwater-treasures/">
+                                                                    href="/underwater-treasures/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/19.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/19.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -1082,9 +309,9 @@
                                                             </a></div>
                                                         <div class="owl-item cloned" style="width: 440.75px;"><a
                                                                     class="angled-img"
-                                                                    href="http://spin2spin.com/oriental-joy/">
+                                                                    href="/oriental-joy/">
                                                                 <div class="img">
-                                                                    <img src="http://spin2spin.com/wp-content/uploads/2018/01/13.jpg"
+                                                                    <img src="/wp-content/uploads/2018/01/13.jpg"
                                                                          alt="">
 
                                                                 </div>
@@ -1109,7 +336,7 @@
                                             <div class=" youplay-banner-parallax youplay-banner youplay-banner-id-2 full"
                                                  style="height: 949px;">
                                                 <div class="image"
-                                                     style="background-image: url(http://spin2spin.com/wp-content/uploads/2018/01/spin2spin_main3.jpg);"
+                                                     style="background-image: url(/wp-content/uploads/2018/01/spin2spin_main3.jpg);"
                                                      data-speed="0.4"></div>
 
                                                 <div class="info">
@@ -1270,7 +497,7 @@
                                                                         <div class="vc_cta3-actions">
                                                                             <div class="vc_btn3-container vc_btn3-inline">
                                                                                 <a class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-modern vc_btn3-color-primary"
-                                                                                   href="http://spin2spin.com/register-2/"
+                                                                                   href="/register-2/"
                                                                                    title="">Register</a></div>
                                                                         </div>
                                                                     </div>
@@ -1292,7 +519,7 @@
                                             </div>
                                             <div class="text-center youplay-banner-parallax youplay-banner youplay-banner-id-3 mid">
                                                 <div class="image"
-                                                     style="background-image: url(http://spin2spin.com/wp-content/uploads/2018/01/cashback.jpg);"
+                                                     style="background-image: url(/wp-content/uploads/2018/01/cashback.jpg);"
                                                      data-speed="0.4"></div>
 
                                                 <div class="info">

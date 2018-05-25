@@ -1,0 +1,181 @@
+.jackpots_div{
+	width: 100%;
+}
+
+.jackpots_div section {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.jackpots {
+    min-height: 130px;
+    padding: 0;
+    justify-content: space-around;
+}
+
+.jackpot {
+    border-radius: 6px;
+    height: 100px;
+    align-self: center;
+    flex-direction: column;
+    align-content: stretch;
+    width: 280px;
+}
+
+.jackpot-name {
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.jackpot-name-text {
+    text-transform: uppercase;
+    justify-content: center;
+    align-self: center;
+    font-family: "Lato", sans-seri;
+    font-size: 22px;
+    color: black;
+}
+
+.jackpot-value {
+    justify-content: space-between;
+    flex-grow: 1;
+    padding: 0 5px;
+}
+
+.jackpot-value-group {
+    border-radius: 6px;
+    width: 90px;
+    height: 30px;
+    overflow: hidden;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.jackpot-value-group-decimal {
+    border-radius: 6px;
+    width: 90px;
+    height: 30px;
+    overflow: hidden;
+    align-content: stretch;
+    align-items: stretch;
+}
+
+.jackpot-digit {
+    width: 30px;
+    height: 30px;
+    font-family: "Arial Narrow";
+	font-weight: bold;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.jackpot-value-group>.jackpot-dia {
+    background: radial-gradient(#fdb100, rgb(156, 141, 24));
+}
+
+.jackpot-value-group-decimal>.jackpot-dia {
+    background: radial-gradient(#b89e20, #8c6200);
+}
+
+.jackpot-value-group>.jackpot-pla {
+    background: radial-gradient(#b1abba, #746f7d);
+}
+
+.jackpot-value-group-decimal>.jackpot-pla {
+   background: radial-gradient(#a49fad, #5f5a68);
+}
+
+.jackpot-value-group>.jackpot-gol {
+    background: radial-gradient(#6f4f28, #b37f41);
+}
+
+.jackpot-value-group-decimal>.jackpot-gol {
+     background: radial-gradient(#916732, #7f582f);
+}
+.jackpot-value-group>.jackpot-blue {
+    background: radial-gradient(#919393, #cacccc);
+}
+
+.jackpot-value-group-decimal>.jackpot-blue {
+    background: radial-gradient(#818383, #cfd1d1);
+}
+
+.jackpot-value-group>.jackpot-orange {
+    background: radial-gradient(#916d51, #b28a7f);
+}
+
+.jackpot-value-group-decimal>.jackpot-orange {
+    background: radial-gradient(#926650, #d4977f);
+}
+
+.jackpot-value-group>.jackpot-cyan {
+    background: radial-gradient(#a73502, #690812);
+}
+
+.jackpot-value-group-decimal>.jackpot-cyan {
+    background: radial-gradient(rgba(169, 47, 2, 0.86), #551a02);
+}
+
+.digits-drum {
+    flex-direction: column;
+    -webkit-transition: margin 2s ease-in-out;
+    -moz-transition: margin 2s ease-in-out;
+    -ms-transition: margin 2s ease-in-out;
+    -o-transition: margin 2s ease-in-out;
+    transition: margin 2s ease-in-out;
+}
+
+.notransition {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -o-transition: none !important;
+    transition: none !important;
+}
+
+.digit {
+    min-width: 30px;
+    min-height: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    /*background: rgba(0,0,0,0.1);*/
+    flex: 1;
+    padding: 0 30px 0 35px;
+    flex-direction: column;
+}
+
+section#jackpot-win {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height:  100%;
+    width: 100%;
+}
+
+a#jackpot-win-close {
+    position: fixed;
+    left: 5px;
+    top: 5px;
+    font-size: 50px;
+    cursor: pointer;
+    font-family: 'Arial';
+    background-color: #e62727;
+    font-size: 14px;
+    padding: 8px 14px 9px;
+    font-weight: bold;
+    line-height: 1;
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    display: inline-block;
+    color: #fff;
+    text-decoration: none;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
+    text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    cursor: pointer;
+}

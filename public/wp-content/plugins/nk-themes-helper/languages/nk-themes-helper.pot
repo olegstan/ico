@@ -1,0 +1,870 @@
+# Copyright (C) 2018 nK Themes Helper
+# This file is distributed under the same license as the nK Themes Helper package.
+msgid ""
+msgstr ""
+"Project-Id-Version: nK Themes Helper\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: _nK <https://nkdev.info>\n"
+"Last-Translator: _nK <https://nkdev.info>\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: dist/nk-themes-helper/class-custom-post-type.php:333, dist/nk-themes-helper/class-custom-post-type.php:334, dist/nk-themes-helper/class-custom-post-type.php:335, dist/nk-themes-helper/class-custom-post-type.php:336, dist/nk-themes-helper/class-custom-post-type.php:411, dist/nk-themes-helper/class-custom-post-type.php:412, dist/nk-themes-helper/class-custom-post-type.php:413, dist/nk-themes-helper/class-custom-post-type.php:514
+msgid "%s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:337
+msgid "Add New"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:338, dist/nk-themes-helper/class-custom-post-type.php:418
+msgid "Add New %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:339, dist/nk-themes-helper/class-custom-post-type.php:415
+msgid "Edit %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:340
+msgid "New %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:341, dist/nk-themes-helper/class-custom-post-type.php:416
+msgid "View %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:342, dist/nk-themes-helper/class-custom-post-type.php:422
+msgid "Search %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:343, dist/nk-themes-helper/class-custom-post-type.php:427
+msgid "No %s found"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:344
+msgid "No %s found in Trash"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:345, dist/nk-themes-helper/class-custom-post-type.php:421
+msgid "Parent %s:"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:414
+msgid "All %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:417
+msgid "Update %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:419
+msgid "New %s Name"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:420
+msgid "Parent %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:423
+msgid "Popular %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:424
+msgid "Seperate %s with commas"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:425
+msgid "Add or remove %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:426
+msgid "Choose from most used %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:567
+msgid "No %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:653
+msgid "Show all %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:816, dist/nk-themes-helper/class-custom-post-type.php:819, dist/nk-themes-helper/class-custom-post-type.php:821
+msgid "%s updated."
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:817, dist/nk-themes-helper/class-portfolio.php:233
+msgid "Custom field updated."
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:818, dist/nk-themes-helper/class-portfolio.php:234
+msgid "Custom field deleted."
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:820
+msgid "%2$s restored to revision from %1$s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:822
+msgid "%s saved."
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:823
+msgid "%s submitted."
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:825
+msgid "%2$s scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:826, dist/nk-themes-helper/class-portfolio.php:244
+msgid "M j, Y @ G:i"
+msgstr ""
+
+#: dist/nk-themes-helper/class-custom-post-type.php:829
+msgid "%s draft updated."
+msgstr ""
+
+#: dist/nk-themes-helper/class-demo-importer.php:249
+msgid "Demo data successfully imported!"
+msgstr ""
+
+#: dist/nk-themes-helper/class-demo-importer.php:293, dist/nk-themes-helper/class-demo-importer.php:502, dist/nk-themes-helper/inc/widgets-importer/widgets_import.php:68
+msgid "Widgets import file could not be found."
+msgstr ""
+
+#: dist/nk-themes-helper/class-demo-importer.php:299
+msgid "Widgets imported"
+msgstr ""
+
+#: dist/nk-themes-helper/class-demo-importer.php:306
+msgid "Customizer options imported"
+msgstr ""
+
+#: dist/nk-themes-helper/class-demo-importer.php:339
+msgid "RevSlider %s imported"
+msgstr ""
+
+#: dist/nk-themes-helper/class-demo-importer.php:359
+msgid "Navigations added to their locations"
+msgstr ""
+
+#: dist/nk-themes-helper/class-demo-importer.php:392
+msgid "Blog settings imported"
+msgstr ""
+
+#: dist/nk-themes-helper/class-demo-importer.php:414
+msgid "WooCommerce settings imported"
+msgstr ""
+
+#: dist/nk-themes-helper/class-instagram.php:111
+msgid "Something went wrong."
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:104
+msgid "Portfolio"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:105
+msgid "Portfolio Item"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:106
+msgctxt "admin menu"
+msgid "Portfolio"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:107
+msgctxt "add new on admin bar"
+msgid "Portfolio Item"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:108
+msgid "Add New Item"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:109, dist/nk-themes-helper/class-portfolio.php:110
+msgid "Add New Portfolio Item"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:111
+msgid "Edit Portfolio Item"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:112
+msgid "View Item"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:113
+msgid "All Portfolio Items"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:114
+msgid "Search Portfolio"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:115
+msgid "Parent Portfolio Item:"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:116
+msgid "No portfolio items found"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:117
+msgid "No portfolio items found in trash"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:143, dist/nk-themes-helper/class-portfolio.php:145
+msgid "Portfolio Categories"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:144
+msgid "Portfolio Category"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:146
+msgid "Edit Portfolio Category"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:147
+msgid "Update Portfolio Category"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:148
+msgid "Add New Portfolio Category"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:149
+msgid "New Portfolio Category Name"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:150
+msgid "Parent Portfolio Category"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:151
+msgid "Parent Portfolio Category:"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:152
+msgid "All Portfolio Categories"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:153
+msgid "Search Portfolio Categories"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:154
+msgid "Popular Portfolio Categories"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:155
+msgid "Separate portfolio categories with commas"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:156
+msgid "Add or remove portfolio categories"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:157
+msgid "Choose from the most used portfolio categories"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:158
+msgid "No portfolio categories found."
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:177, dist/nk-themes-helper/class-portfolio.php:179
+msgid "Portfolio Tags"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:178
+msgid "Portfolio Tag"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:180
+msgid "Edit Portfolio Tag"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:181
+msgid "Update Portfolio Tag"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:182
+msgid "Add New Portfolio Tag"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:183
+msgid "New Portfolio Tag Name"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:184
+msgid "Parent Portfolio Tag"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:185
+msgid "Parent Portfolio Tag:"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:186
+msgid "All Portfolio Tags"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:187
+msgid "Search Portfolio Tags"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:188
+msgid "Popular Portfolio Tags"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:189
+msgid "Separate portfolio tags with commas"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:190
+msgid "Add or remove portfolio tags"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:191
+msgid "Choose from the most used portfolio tags"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:192
+msgid "No portfolio tags found."
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:209
+msgid "Thumbnail"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:232, dist/nk-themes-helper/class-portfolio.php:235
+msgid "Portfolio item updated."
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:237
+msgid "Portfolio item restored to revision from %s"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:238
+msgid "Portfolio item published."
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:239
+msgid "Portfolio item saved."
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:240
+msgid "Portfolio item submitted."
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:242
+msgid "Portfolio item scheduled for: <strong>%1$s</strong>."
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:246
+msgid "Portfolio item draft updated."
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:253
+msgid "View portfolio item"
+msgstr ""
+
+#: dist/nk-themes-helper/class-portfolio.php:254
+msgid "Preview portfolio item"
+msgstr ""
+
+#: dist/nk-themes-helper/class-theme-dashboard.php:100
+msgid "This will import data from demo page. Clicking this option will replace your current theme options and widgets. Please, wait before the process end. It may take a while."
+msgstr ""
+
+#: dist/nk-themes-helper/class-theme-dashboard.php:101
+msgid "The demo import process is not finished yet..."
+msgstr ""
+
+#: dist/nk-themes-helper/class-theme-dashboard.php:103
+msgid "Demo data successfully imported. Now, please install and run %s plugin once."
+msgstr ""
+
+#: dist/nk-themes-helper/class-theme-dashboard.php:104, dist/nk-themes-helper/theme-dashboard/admin_pages/demos.php:35
+msgid "Regenerate Thumbnails"
+msgstr ""
+
+#: dist/nk-themes-helper/class-theme-dashboard.php:106
+msgid "This will deactivate your copy of theme. You will not be able to get direct theme updates."
+msgstr ""
+
+#: dist/nk-themes-helper/class-theme-dashboard.php:118
+msgid "%s is now installed and ready to use! Get ready to build something beautiful. Read below for additional information. We hope you enjoy it!"
+msgstr ""
+
+#: dist/nk-themes-helper/class-theme-dashboard.php:119
+msgid "%s on ThemeForest"
+msgstr ""
+
+#: dist/nk-themes-helper/class-theme-dashboard.php:121
+msgid "Thank you for choosing %s."
+msgstr ""
+
+#: dist/nk-themes-helper/class-theme-dashboard.php:152
+msgid "Dashboard"
+msgstr ""
+
+#: dist/nk-themes-helper/class-theme-dashboard.php:156
+msgid "Plugins"
+msgstr ""
+
+#: dist/nk-themes-helper/class-theme-dashboard.php:160
+msgid "Demo Import"
+msgstr ""
+
+#: dist/nk-themes-helper/class-theme-dashboard.php:165
+msgid "Customize"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/nk-wxr-importer.php:142, dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:753
+msgid "Failed to import \"%s\": Invalid post type %s"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/nk-wxr-importer.php:152, dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:763
+msgid "%s \"%s\" already exists."
+msgstr ""
+
+#: dist/nk-themes-helper/inc/nk-wxr-importer.php:258, dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:855
+msgid "Failed to import \"%s\" (%s)"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/nk-wxr-importer.php:290, dist/nk-themes-helper/inc/nk-wxr-importer.php:553, dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:887, dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1705
+msgid "Imported \"%s\" (%s)"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/nk-wxr-importer.php:295, dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:892
+msgid "Post %d remapped to %d"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/nk-wxr-importer.php:529, dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1681
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/nk-wxr-importer.php:558, dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1710
+msgid "Term %d remapped to %d"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/class-admin-pages.php:135
+msgid "Welcome to %s"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/class-updater.php:187, dist/nk-themes-helper/theme-dashboard/class-updater.php:228
+msgid "theme dashboard"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/class-updater.php:189
+msgid "To receive automatic updates license activation is required. Please visit %s to activate %s theme."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/class-updater.php:230
+msgid "To receive automatic updates license activation is required. Please visit %s to activate your theme %s."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/class-updater.php:235
+msgid "Error! Can't connect to filesystem"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/class-updater.php:238
+msgid "Getting download link..."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/class-updater.php:244
+msgid "Download link could not be retrieved"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/class-updater.php:247
+msgid "Downloading package..."
+msgstr ""
+
+#: dist/nk-themes-helper/inc/customizer-importer/customizer-importer.php:37
+msgid "Error importing settings! Please try again."
+msgstr ""
+
+#: dist/nk-themes-helper/inc/customizer-importer/customizer-importer.php:47, dist/nk-themes-helper/inc/customizer-importer/customizer-importer.php:51
+msgid "Error importing settings! Please check that you uploaded a customizer export file."
+msgstr ""
+
+#: dist/nk-themes-helper/inc/customizer-importer/customizer-importer.php:55
+msgid "Error importing settings! The settings you uploaded are not for the current theme."
+msgstr ""
+
+#: dist/nk-themes-helper/inc/widgets-importer/widgets_import.php:100
+msgid "Widgets import data could not be read."
+msgstr ""
+
+#: dist/nk-themes-helper/inc/widgets-importer/widgets_import.php:140
+msgid "Sidebar does not exist in theme (using Inactive)"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/widgets-importer/widgets_import.php:162
+msgid "Site does not support widget"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/widgets-importer/widgets_import.php:198
+msgid "Widget already exists"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/widgets-importer/widgets_import.php:247
+msgid "Imported"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/widgets-importer/widgets_import.php:250
+msgid "Imported to Inactive"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/widgets-importer/widgets_import.php:257
+msgid "No Title"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-logger-html.php:17
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:130
+msgid "Could not open the file for parsing"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:166, dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:282, dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:355
+msgid "This WXR file (version %s) is newer than the importer (version %s) and may not be supported. Please consider updating."
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:504
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:564
+msgid "Invalid author mapping"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1036
+msgid "Invalid file type"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1519
+msgid "Failed to import user \"%s\""
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1540
+msgid "Imported user \"%s\""
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1544
+msgid "User %d remapped to %d"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1763
+msgid "Remote server returned %1$d %2$s for %3$s"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1776
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1781
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1787
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1809
+msgid "Running post-processing for post %d"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1822
+msgid "Could not find the post parent for \"%s\" (post #%d)"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1827
+msgid "Post %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1841
+msgid "Could not find the author for \"%s\" (post #%d)"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1846
+msgid "Post %d was imported with author \"%s\", but could not be found"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1872
+msgid "Post %d was marked for post-processing, but none was required."
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1883
+msgid "Could not update \"%s\" (post #%d) with mapped data"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1928
+msgid "Could not find the menu object for \"%s\" (post #%d)"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1933
+msgid "Post %d was imported with object \"%d\" of type \"%s\", but could not be found"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1955
+msgid "Could not find the comment parent for comment #%d"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1959
+msgid "Comment %d was imported with parent %d, but could not be found"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1973
+msgid "Could not find the author for comment #%d"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1977
+msgid "Comment %d was imported with author %d, but could not be found"
+msgstr ""
+
+#: dist/nk-themes-helper/inc/wxr-importer/class-wxr-importer.php:1994
+msgid "Could not update comment #%d with mapped data"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:13
+msgid "Activated"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:14, dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:19
+msgid "Activation"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:18
+msgid "Not Activated"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:26
+msgid "By activating %s you will unlock premium options - <strong>direct theme updates</strong> and access to <strong>official support</strong>."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:39, dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:49
+msgid "Deactivate %s"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:60
+msgid "Activate %s with Envato"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:65
+msgid "or activate %s purchased on https://nkdev.info/"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:69, dist/nk-themes-helper/theme-dashboard/admin_pages/plugins.php:51
+msgid "Activate"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:77
+msgid "Don't have valid license yet?"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:79
+msgid "Purchase %s License"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:93
+msgid "Update Available"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:94, dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:99, dist/nk-themes-helper/theme-dashboard/admin_pages/plugins.php:69
+msgid "Update"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:98
+msgid "Theme is Up to Date"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:106
+msgid "Installed Version:"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:111
+msgid "Latest Version:"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:121, dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:127, dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:134
+msgid "Update Now"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:176
+msgid "No Problems"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:177, dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:182
+msgid "Recommendations"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:181
+msgid "Some Problems"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:192
+msgid "WP Memory Limit:"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:198, dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:223, dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:241, dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:263, dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:280
+msgid "[more info]"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:201
+msgid "We recommend setting memory to at least %s."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:206, dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:246
+msgid "See more: %s"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:207
+msgid "Increasing memory allocated to PHP."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:215
+msgid "PHP Version:"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:225
+msgid "We recommend upgrade php version to at least %s."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:233
+msgid "PHP Time Limit:"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:243
+msgid "We recommend setting max execution time to at least %s."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:247
+msgid "Increasing max execution to PHP"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:256
+msgid "WP Remote Get:"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:262
+msgid "Failed"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:265
+msgid "wp_remote_get() failed. Some theme features may not work. Please contact your hosting provider and make sure that https://nkdev.info/ is not blocked."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:272
+msgid "Child Theme:"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:282
+msgid "We recommend use child theme to prevent loosing your customizations after theme update."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:296
+msgid "Support"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:299
+msgid "Have troubles, found a bug or want to suggest something? Write in support system."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:300
+msgid "Make sure, you have a valid license, otherwise we don't provide support."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/dashboard.php:302
+msgid "Get Support"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/demos.php:10
+msgid "You should install and activate required plugin nK Themes Helper. Find it in \"Plugins\" tab."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/demos.php:20
+msgid "Important Notes:"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/demos.php:25
+msgid "We recommend import demo on a clean WordPress website. To reset your installation use %s."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/demos.php:26
+msgid "Reset WordPress Plugin"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/demos.php:30
+msgid "All recommended and required plugin should be installed."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/demos.php:34
+msgid "After demo data imported, run %s plugin."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/demos.php:39
+msgid "Importing a demo provides images, pages, posts, theme options, widgets and more. . Please, wait before the process end, it may take a while."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/demos.php:62
+msgid "Live Preview"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/demos.php:69
+msgid "Import"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/plugins.php:5
+msgid "TGMPA library is required to show plugins"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/plugins.php:29
+msgid "Install %2$s"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/plugins.php:29
+msgid "Install"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/plugins.php:51
+msgid "Activate %2$s"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/plugins.php:69
+msgid "Update %2$s"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/plugins.php:90
+msgid "Deactivate %2$s"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/plugins.php:90
+msgid "Deactivate"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/plugins.php:109
+msgid "These plugins comes with %s theme. If you want full functionality from demo page, you should activate all of these plugins."
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/plugins.php:127
+msgid "Version: %1s | "
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/plugins.php:129
+msgid "Available Version: %s"
+msgstr ""
+
+#: dist/nk-themes-helper/theme-dashboard/admin_pages/plugins.php:143
+msgid "Required"
+msgstr ""

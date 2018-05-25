@@ -19,7 +19,17 @@ use Hash;
 class User extends Authenticatable
 {
     use Notifiable;
-    protected $fillable = ['name', 'email', 'password', 'remember_token', 'role_id'];
+
+    protected $fillable = [
+        'name',
+        'email',
+        'token',
+        'credits',
+        'password',
+        'remember_token',
+        'role_id'
+    ];
+
     protected $hidden = ['password', 'remember_token'];
     
     
@@ -50,12 +60,50 @@ class User extends Authenticatable
     {
         return $this->belongsTo(Role::class, 'role_id');
     }
-    
-    
-    
 
+
+    /**
+     * @param string $token
+     */
     public function sendPasswordResetNotification($token)
     {
        $this->notify(new ResetPassword($token));
+    }
+
+    /**
+     * @param array $attributes
+     * @return static
+     */
+    public static function create(array $attributes = [])
+    {
+        $model = new static($attributes);
+
+        $model->token = self::getUniqueHash();
+
+        $model->save();
+
+        return $model;
+    }
+
+    /**
+     * @return string
+     */
+    public static function getUniqueHash()
+    {
+        $hash = static::getUniqueString(20);
+        if(User::where('token', '=', $hash)->get()->first()){
+            return self::getUniqueHash();
+        }else{
+            return $hash;
+        }
+    }
+
+    /**
+     * @param $length
+     * @return string
+     */
+    public static function getUniqueString($length)
+    {
+        return str_random($length);
     }
 }

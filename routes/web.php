@@ -1,6 +1,6 @@
 <?php
 Route::get('/', 'LobbyController@getIndex');
-Route::get('/games', 'LobbyController@getGames');
+Route::get('/games', ['as' => 'games', 'uses' => 'LobbyController@getGames']);
 
 // Authentication Routes...
 $this->get('login', 'Auth\LoginController@showLoginForm')->name('login');
