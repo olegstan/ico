@@ -1,6 +1,7 @@
 <?php
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Auth;
 use DB;
@@ -125,6 +126,30 @@ class GameSession extends Model
             ]);
 
             return $session->id;
+        }
+    }
+
+    /**
+     * @param $sessionId
+     * @param $userId
+     * @return bool
+     */
+    public static function close($sessionId, $userId)
+    {
+        /**
+         * @var GameSession $session
+         */
+        $session = GameSession::where('session_id', $sessionId)
+            ->first();
+
+        if($session){
+            $session->update([
+                'winner_id' => $userId,
+                'ended_at' => Carbon::now()
+            ]);
+            return true;
+        }else{
+            return false;
         }
     }
 }

@@ -20,6 +20,7 @@ $this->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm
 $this->post('password/reset', 'Auth\ResetPasswordController@reset')->name('auth.password.reset');
 
 Route::group(['middleware' => ['auth'], 'prefix' => '', 'as' => ''], function () {
-    Route::get('/game', 'LobbyController@getOpenSession');
+    Route::get('/game/open', 'LobbyController@getOpenSession');
+    Route::post('/game/close', 'LobbyController@postCloseSession');
 });
 

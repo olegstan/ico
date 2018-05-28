@@ -17,7 +17,7 @@ class UserSeed extends Seeder
                 'id' => 1,
                 'name' => 'Admin',
                 'email' => 'admin@admin.com',
-                'password' => '$2y$10$vc/IAun.ShvPJQU8kdtI2eVEs8L3pwJlEf3aBzhv51ueP9YagoUru',
+                'password' => bcrypt('admin'),
                 'role_id' => User::ADMIN,
                 'remember_token' => '',
             ],
