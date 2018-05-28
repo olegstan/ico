@@ -30,7 +30,7 @@ class TestCreateSession extends BaseCommand
      */
     public function executeCommand()
     {
-        $limit = 150;
+        $limit = 1000;
         for($i = 0; $i < $limit; $i++){
             $game = Game::inRandomOrder()
                 ->first();
@@ -44,7 +44,7 @@ class TestCreateSession extends BaseCommand
                 ->first();
 
             if($user && $gameBet){
-                GameSession::open($gameBet->id, $user->id);
+                GameSession::open($gameBet->id, 4);
             }
         }
     }

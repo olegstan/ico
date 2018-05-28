@@ -37,7 +37,7 @@
 <!-- /Yandex.Metrika counter  -->
 <script type="text/javascript">
     /* <![CDATA[ */
-    var ajax_var = {"url": "http:\/\/spin2spin.com\/wp-admin\/admin-ajax.php", "nonce": "f179402e3f"};
+    var ajax_var = {"url": "\/wp-admin\/admin-ajax.php", "nonce": "f179402e3f"};
     /* ]]> */
 </script>
 <script type="text/javascript"
@@ -49,7 +49,7 @@
     /* <![CDATA[ */
     var wpcf7 = {
         "apiSettings": {
-            "root": "http:\/\/spin2spin.com\/wp-json\/contact-form-7\/v1",
+            "root": "\/wp-json\/contact-form-7\/v1",
             "namespace": "contact-form-7\/v1"
         }, "recaptcha": {"messages": {"empty": "Please verify that you are not a robot."}}
     };

@@ -9,7 +9,7 @@
         <div class="dropdown-menu pb-20" style="width: 300px;">
             <div class="block-content m-20 mnb-10 mt-0">
                 <div class="lwa lwa-default">
-                    <form class="lwa-form block-content" action="/auth_login/"
+                    <form class="lwa-form block-content" action="/login/"
                           method="post">
 
                         <span class="lwa-status"></span>
@@ -40,6 +40,7 @@
 
                         <br>
 
+                        {{ csrf_field() }}
                         <input type="hidden" name="lwa_profile_link" value="1">
                         <input type="hidden" name="login-with-ajax" value="login">
 

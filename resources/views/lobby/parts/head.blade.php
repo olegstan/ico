@@ -6,14 +6,8 @@
 
 <link rel="shortcut icon" href="http://mosgorinvest.ru/wp-content/uploads/2017/12/fav_spin-1.png">
 
-<title>Spin2Spin – BTC Casino</title>
-<link rel="dns-prefetch" href="//fonts.googleapis.com">
-<link rel="dns-prefetch" href="//s.w.org">
-<link rel="alternate" type="application/rss+xml" title="Spin2Spin » Feed" href="/feed/">
-<link rel="alternate" type="application/rss+xml" title="Spin2Spin » Comments Feed"
-      href="/comments/feed/">
-<link rel="alternate" type="application/rss+xml" title="Spin2Spin » Home Comments Feed"
-      href="/main/feed/">
+<title></title>
+
 <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
 <script type="text/javascript">
     window._wpemojiSettings = {
@@ -21,7 +15,7 @@
         "ext": ".png",
         "svgUrl": "https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/",
         "svgExt": ".svg",
-        "source": {"concatemoji": "http:\/\/spin2spin.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.3"}
+        "source": {"concatemoji": "\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.9.3"}
     };
     !function (a, b, c) {
         function d(a, b) {
@@ -314,7 +308,7 @@
         src="/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1"></script>
 <script type="text/javascript">
     /* <![CDATA[ */
-    var LWA = {"ajaxurl": "http:\/\/spin2spin.com\/wp-admin\/admin-ajax.php"};
+    var LWA = {"ajaxurl": "\/wp-admin\/admin-ajax.php"};
     /* ]]> */
 </script>
 <script type="text/javascript"
@@ -361,8 +355,6 @@
         src="/wp-content/plugins/revslider/public/assets/js/jquery.themepunch.revolution.min.js?ver=5.4.6.3.1"></script>
 <script type="text/javascript"
         src="/wp-content/plugins/spin2spin-plugin/assets/js/jquery.min.js?ver=4.9.3"></script>
-<script type="text/javascript"
-        src="/wp-content/plugins/spin2spin-plugin/assets/js/socket.js?ver=4.9.3"></script>
 <script type="text/javascript"
         src="/wp-content/plugins/spin2spin-plugin/assets/js/jackpot.js?ver=4.9.3"></script>
 <link rel="https://api.w.org/" href="/wp-json/">

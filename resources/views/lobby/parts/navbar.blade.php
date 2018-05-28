@@ -8,7 +8,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="http://spin2spin.com">
+            <a class="navbar-brand" href="/">
                 <img src="http://mosgorinvest.ru/wp-content/uploads/2017/12/2spin_prel-1.png" alt="">
             </a>
         </div>

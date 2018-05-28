@@ -3,6 +3,8 @@ Route::get('/', 'LobbyController@getIndex');
 Route::get('/games', ['as' => 'games', 'uses' => 'LobbyController@getGames']);
 
 // Authentication Routes...
+$this->any('/wp-admin/admin-ajax.php', 'Auth\LoginController@anyForm')->name('login');
+
 $this->get('login', 'Auth\LoginController@showLoginForm')->name('login');
 $this->post('login', 'Auth\LoginController@login')->name('auth.login');
 $this->post('logout', 'Auth\LoginController@logout')->name('auth.logout');
@@ -17,13 +19,7 @@ $this->post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail'
 $this->get('password/reset/{token}', 'Auth\ResetPasswordController@showResetForm')->name('password.reset');
 $this->post('password/reset', 'Auth\ResetPasswordController@reset')->name('auth.password.reset');
 
-Route::group(['middleware' => ['auth'], 'prefix' => 'admin', 'as' => 'admin.'], function () {
-    Route::get('/home', 'HomeController@index');
-    
-    Route::resource('roles', 'Admin\RolesController');
-    Route::post('roles_mass_destroy', ['uses' => 'Admin\RolesController@massDestroy', 'as' => 'roles.mass_destroy']);
-    Route::resource('users', 'Admin\UsersController');
-    Route::post('users_mass_destroy', ['uses' => 'Admin\UsersController@massDestroy', 'as' => 'users.mass_destroy']);
-    Route::resource('games', 'Admin\GamesController');
-    Route::post('games_mass_destroy', ['uses' => 'Admin\GamesController@massDestroy', 'as' => 'games.mass_destroy']);
+Route::group(['middleware' => ['auth'], 'prefix' => '', 'as' => ''], function () {
+    Route::get('/game', 'LobbyController@getOpenSession');
 });
+

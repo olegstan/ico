@@ -34,10 +34,10 @@ class GameSession extends Model
     /**
      * @param $betId
      * @param $userId
+     * @return mixed
      */
     public static function open($betId, $userId)
     {
-        $userId = 4;
         //проверяем есть ли такая ставка у этой игры
         $gameBet = GameBet::findOrFail($betId);
         /**
@@ -47,13 +47,15 @@ class GameSession extends Model
 
         //проверяем есть уже сессия для этой игры
         echo $betId . " \n";
+        echo $userId . " \n";
+        echo " \n";
         $session = self::whereNull('started_at')
             ->where('bet_id', $betId)
             ->get()
             ->first();
 
         if($session){
-            //проверяем нет ли этого пользователя уже в сессии
+//            //проверяем нет ли этого пользователя уже в сессии
             $session = self::whereNull('g.started_at')
                 ->where('g.bet_id', $betId)
                 ->where('u.user_id', $userId)
@@ -67,19 +69,32 @@ class GameSession extends Model
             if($session){
                 return $session->id;
             }else{
-                 $session = self::whereNull('g.started_at')
+//                select COUNT(u.session_id) as count, `g`.`id`
+//from `game_sessions` as `g`
+//left join `game_sessions_users` as `u` on `u`.`session_id` = `g`.`id`
+//where `g`.`started_at` is null
+//                and `g`.`id` NOT IN (SELECT `game_sessions_users`.`session_id` FROM `game_sessions_users` WHERE `game_sessions_users`.`user_id` = 3)
+//and `u`.`user_id` is not null
+//group by `g`.`id` having COUNT(u.session_id) < 4
+
+
+                 $session = self::select(DB::raw('
+                    g.id,
+                    COUNT(u.session_id) as count
+                 '))
+                    ->whereNull('g.started_at')
                     ->where('g.bet_id', $betId)
                     ->from('game_sessions as g')
-                    ->leftJoin('game_sessions_users as u', function ($j){
+                    ->leftJoin('game_sessions_users as u', function ($j) use ($userId){
                         $j->on('u.session_id', '=', 'g.id');
                     })
+                    ->whereRaw('g.id NOT IN (SELECT `game_sessions_users`.`session_id` FROM `game_sessions_users` WHERE `game_sessions_users`.`user_id` = ' . $userId . ')')
                     ->groupBy('g.id')
-                    ->havingRaw('COUNT(u.session_id) < ' . $game->need_users)
+                    ->havingRaw('count < ' . $game->need_users)
                     ->get()
                     ->first();
 
                  if($session){
-                     echo 1 . " \n";
                      GameSessionUser::create([
                          'user_id' => $userId,
                          'session_id' => $session->id
@@ -87,7 +102,6 @@ class GameSession extends Model
 
                      return $session->id;
                  }else{
-                     echo 2 . " \n";
                      $session = GameSession::create([
                          'bet_id' => $gameBet->id
                      ]);
@@ -101,7 +115,6 @@ class GameSession extends Model
                  }
             }
         }else{
-            echo 3 . " \n";
             $session = GameSession::create([
                 'bet_id' => $gameBet->id
             ]);

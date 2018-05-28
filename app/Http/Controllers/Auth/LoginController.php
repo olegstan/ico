@@ -23,6 +23,14 @@ class LoginController extends Controller
 
     use AuthenticatesUsers;
 
+    public function anyForm()
+    {
+        return response()->json([
+            'error' => '',
+            'message' => ''
+        ]);
+    }
+
     /**
      * Where to redirect users after login / registration.
      *
