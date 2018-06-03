@@ -1,3 +1,4 @@
+@if(!Auth::check())
 <ul class="nav navbar-nav navbar-right">
     <li class="dropdown dropdown-hover dropdown-user">
         <a href="javascript:void(0)" class="dropdown-toggle" data-toggle="dropdown" role="button"
@@ -93,3 +94,4 @@
         </div>
     </li>
 </ul>
+@endif

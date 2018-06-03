@@ -15,7 +15,7 @@ class UserSeed extends Seeder
         $items = [
             [
                 'id' => 1,
-                'name' => 'Admin',
+                'name' => 'admin',
                 'email' => 'admin@admin.com',
                 'password' => bcrypt('admin'),
                 'role_id' => User::ADMIN,

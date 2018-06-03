@@ -7,6 +7,7 @@ use App\Http\Requests\Lobby\OpenSessionRequest;
 use App\Http\Requests\Lobby\CloseSessionRequest;
 use App\Models\GameSession;
 use Auth;
+use Session;
 
 class LobbyController extends Controller
 {
@@ -36,6 +37,7 @@ class LobbyController extends Controller
      */
     public function getOpenSession(OpenSessionRequest $request)
     {
+        Session::set('bet_id', $request->input('bet_id'));
         GameSession::open($request->input('bet_id'), Auth::id());
 
         return response()->json([
@@ -54,6 +56,11 @@ class LobbyController extends Controller
         return response()->json([
             'result' => 'success'
         ]);
+    }
+
+    public function removeUserFromSession()
+    {
+
     }
 
 
