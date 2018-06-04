@@ -10,4 +10,6 @@ Route::group(['middleware' => ['admin'], 'prefix' => 'admin', 'as' => 'admin.'],
     Route::post('games_mass_destroy', ['uses' => 'Admin\GamesController@massDestroy', 'as' => 'games.mass_destroy']);
     Route::resource('sessions', 'Admin\SessionsController');
     Route::post('sessions_mass_destroy', ['uses' => 'Admin\SessionsController@massDestroy', 'as' => 'sessions.mass_destroy']);
+    Route::resource('configs', 'Admin\ConfigsController');
+    Route::post('configs_mass_destroy', ['uses' => 'Admin\ConfigsController@massDestroy', 'as' => 'configs.mass_destroy']);
 });

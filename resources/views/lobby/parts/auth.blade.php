@@ -16,7 +16,7 @@
                         <span class="lwa-status"></span>
 
                         <p>
-                            Username: </p>
+                            Username/Email: </p>
                         <div class="youplay-input">
                             <input type="text" name="log">
                         </div>

@@ -60,6 +60,11 @@ class LoginController extends Controller
             self::$fields['password'] => 'required',
         ]);
 
+        $validator->setCustomMessages([
+            'pwd.required' => 'Password required',
+            'email.required' => 'Email required',
+        ]);
+
         if ($validator->fails()) {
             $errorMessage = '<strong>ERROR</strong>';
 

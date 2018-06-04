@@ -106,4 +106,22 @@ class User extends Authenticatable
     {
         return str_random($length);
     }
+
+    /**
+     * @param \Illuminate\Database\Eloquent\Model|null $role
+     * @return bool
+     */
+    public function is($role)
+    {
+        $role = strtolower($role);
+
+        switch ($role){
+            case 'admin':
+                return $this->role_id == self::ADMIN;
+            case 'gamer':
+                return $this->role_id == self::GAMER;
+            default:
+                return false;
+        }
+    }
 }

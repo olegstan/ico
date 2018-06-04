@@ -13,10 +13,9 @@ class GameSeed extends Seeder
      */
     public function run()
     {
-        $limit = 30;
 //        for($i = 0; $i < $limit; $i++){
             $game = Game::create([
-                'name' => 'game-'.$i,
+                'name' => 'bomber',
                 'need_users' => rand(2, 4)
             ]);
 
@@ -34,6 +33,6 @@ class GameSeed extends Seeder
                     ]);
                 }
             }
-        }
+
     }
 }
