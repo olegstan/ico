@@ -31,32 +31,7 @@ class LobbyController extends Controller
         return view('lobby.games');
     }
 
-    /**
-     * @param OpenSessionRequest $request
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function getOpenSession(OpenSessionRequest $request)
-    {
-        Session::set('bet_id', $request->input('bet_id'));
-        GameSession::open($request->input('bet_id'), Auth::id());
 
-        return response()->json([
-            'result' => 'success'
-        ]);
-    }
-
-    /**
-     * @param CloseSessionRequest $request
-     * @return \Illuminate\Http\JsonResponse
-     */
-    public function postCloseSession(CloseSessionRequest $request)
-    {
-        GameSession::close($request->input('session_id'), Auth::id());
-
-        return response()->json([
-            'result' => 'success'
-        ]);
-    }
 
     public function removeUserFromSession()
     {

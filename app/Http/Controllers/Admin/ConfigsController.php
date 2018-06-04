@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 
-use App\Models\Game;
+use App\Models\Config;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use App\Http\Controllers\Controller;
@@ -12,7 +12,7 @@ use App\Http\Requests\Admin\UpdateConfigsRequest;
 class ConfigsController extends Controller
 {
     /**
-     * Display a listing of Game.
+     * Display a listing of Config.
      *
      * @return \Illuminate\Http\Response
      */
@@ -22,14 +22,13 @@ class ConfigsController extends Controller
             return abort(401);
         }
 
-
-                $configs = Game::all();
+        $configs = Config::all();
 
         return view('admin.configs.index', compact('configs'));
     }
 
     /**
-     * Show the form for creating new Game.
+     * Show the form for creating new Config.
      *
      * @return \Illuminate\Http\Response
      */
@@ -43,7 +42,7 @@ class ConfigsController extends Controller
     }
 
     /**
-     * Store a newly created Game in storage.
+     * Store a newly created Config in storage.
      *
      * @param  \App\Http\Requests\StoreConfigsRequest  $request
      * @return \Illuminate\Http\Response
@@ -53,7 +52,7 @@ class ConfigsController extends Controller
         if (! Gate::allows('config_create')) {
             return abort(401);
         }
-        $config = Game::create($request->all());
+        $config = Config::create($request->all());
 
 
 
@@ -62,7 +61,7 @@ class ConfigsController extends Controller
 
 
     /**
-     * Show the form for editing Game.
+     * Show the form for editing Config.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -73,13 +72,13 @@ class ConfigsController extends Controller
             return abort(401);
         }
 
-        $config = Game::findOrFail($id);
+        $config = Config::findOrFail($id);
 
         return view('admin.configs.edit');
     }
 
     /**
-     * Update Game in storage.
+     * Update Config in storage.
      *
      * @param  \App\Http\Requests\UpdateConfigsRequest  $request
      * @param  int  $id
@@ -90,7 +89,7 @@ class ConfigsController extends Controller
         if (! Gate::allows('config_edit')) {
             return abort(401);
         }
-        $config = Game::findOrFail($id);
+        $config = Config::findOrFail($id);
         $config->update($request->all());
 
 
@@ -100,7 +99,7 @@ class ConfigsController extends Controller
 
 
     /**
-     * Display Game.
+     * Display Config.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -110,14 +109,14 @@ class ConfigsController extends Controller
         if (! Gate::allows('config_view')) {
             return abort(401);
         }
-        $config = Game::findOrFail($id);
+        $config = Config::findOrFail($id);
 
         return view('admin.configs.show', compact('config'));
     }
 
 
     /**
-     * Remove Game from storage.
+     * Remove Config from storage.
      *
      * @param  int  $id
      * @return \Illuminate\Http\Response
@@ -127,14 +126,14 @@ class ConfigsController extends Controller
         if (! Gate::allows('config_delete')) {
             return abort(401);
         }
-        $config = Game::findOrFail($id);
+        $config = Config::findOrFail($id);
         $config->delete();
 
         return redirect()->route('admin.configs.index');
     }
 
     /**
-     * Delete all selected Game at once.
+     * Delete all selected Config at once.
      *
      * @param Request $request
      */
@@ -144,7 +143,7 @@ class ConfigsController extends Controller
             return abort(401);
         }
         if ($request->input('ids')) {
-            $entries = Game::whereIn('id', $request->input('ids'))->get();
+            $entries = Config::whereIn('id', $request->input('ids'))->get();
 
             foreach ($entries as $entry) {
                 $entry->delete();

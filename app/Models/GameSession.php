@@ -47,9 +47,9 @@ class GameSession extends Model
         $game = Game::findOrFail($gameBet->game_id);
 
         //проверяем есть уже сессия для этой игры
-        echo $betId . " \n";
-        echo $userId . " \n";
-        echo " \n";
+//        echo $betId . " \n";
+//        echo $userId . " \n";
+//        echo " \n";
         $session = self::whereNull('started_at')
             ->where('bet_id', $betId)
             ->get()

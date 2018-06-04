@@ -27,7 +27,7 @@ class UserSeed extends Seeder
             User::create($item);
         }
 
-        $limit = 30;
+        $limit = 50;
         for($i = 0; $i < $limit; $i++){
             User::create([
                 'name' => 'gamer-'.$i,

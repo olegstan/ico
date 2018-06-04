@@ -51,7 +51,7 @@
                             <li>
                                 <a href="{{ route('admin.sessions.index') }}">
                                     <i class="fa fa-user"></i>
-                                    <span>Games</span>
+                                    <span>Games Sessions</span>
                                 </a>
                             </li>
                         @endcan

@@ -23,7 +23,7 @@ class GamesController extends Controller
         }
 
 
-                $games = Game::all();
+        $games = Game::all();
 
         return view('admin.games.index', compact('games'));
     }

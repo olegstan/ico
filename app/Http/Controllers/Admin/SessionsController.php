@@ -21,7 +21,20 @@ class SessionsController extends Controller
             return abort(401);
         }
 
-        $sessions = GameSession::all();
+        $sessions = GameSession::select([
+            'gs.id',
+            'u.email'
+        ])
+        ->from('game_sessions as gs')
+        ->leftJoin('users as u', function ($j){
+            $j->on('gs.winner_id', '=', 'u.id');
+        })->leftJoin('game_bets as gb', function ($j){
+            $j->on('gs.bet_id', '=', 'gb.id');
+        })->leftJoin('games as g', function ($j){
+            $j->on('gb.game_id', '=', 'g.id');
+        })
+            ->get()
+            ->all();
 
         return view('admin.sessions.index', compact('sessions'));
     }
