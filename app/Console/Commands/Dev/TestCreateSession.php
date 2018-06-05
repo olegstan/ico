@@ -30,7 +30,7 @@ class TestCreateSession extends BaseCommand
      */
     public function executeCommand()
     {
-        $limit = 1000;
+        $limit = 10;
         for($i = 0; $i < $limit; $i++){
             $game = Game::inRandomOrder()
                 ->first();

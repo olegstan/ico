@@ -23,6 +23,10 @@
                 <tr>
                     <th>@lang('quickadmin.sessions.fields.id')</th>
                     <th>@lang('quickadmin.sessions.fields.email')</th>
+                    <th>@lang('quickadmin.sessions.fields.bet')</th>
+                    <th>@lang('quickadmin.sessions.fields.count')</th>
+                    <th>@lang('quickadmin.sessions.fields.started_at')</th>
+                    <th>@lang('quickadmin.sessions.fields.ended_at')</th>
                 </tr>
                 </thead>
 
@@ -31,7 +35,11 @@
                         @foreach ($sessions as $game)
                             <tr data-entry-id="{{ $game->id }}">
                                 <td field-key='id'>{{ $game->id }}</td>
-                                <td field-key='email'>{{ $game->email }}</td>
+                                <td field-key='email'>{{ $game->email ? $game->email : 'no winner' }}</td>
+                                <td field-key='bet'>{{ $game->bet }}</td>
+                                <td field-key='count'>{{ $game->count }}</td>
+                                <td field-key='started_at'>{{ $game->started_at }}</td>
+                                <td field-key='ended_at'>{{ $game->ended_at }}</td>
                             </tr>
                         @endforeach
                     @else

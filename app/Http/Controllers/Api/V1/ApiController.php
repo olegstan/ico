@@ -20,9 +20,16 @@ class ApiController extends Controller
         Session::set('bet_id', $request->input('bet_id'));
         $id = GameSession::open($request->input('bet_id'), Auth::id());
 
+        return response()->redirectTo(env('GAME_HOST', '') . '/open?session_io=' . $id . '&user_id=' . Auth::id());
+    }
 
-        //TODO open game
-
+    /**
+     * @param CloseSessionRequest $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function postStartSession(CloseSessionRequest $request)
+    {
+        GameSession::start($request->input('session_id'));
 
         return response()->json([
             'result' => 'success'
@@ -46,6 +53,4 @@ class ApiController extends Controller
     {
 
     }
-
-
 }

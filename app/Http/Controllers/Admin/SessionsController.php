@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Gate;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Admin\StoreConfigsRequest;
+use DB;
 
 class SessionsController extends Controller
 {
@@ -23,6 +24,14 @@ class SessionsController extends Controller
 
         $sessions = GameSession::select([
             'gs.id',
+            'gs.started_at',
+            'gs.ended_at',
+            'gb.bet',
+            DB::raw('(SELECT COUNT(`gsu2`.`id`) FROM `game_sessions` as `gs2`
+                left join `game_sessions_users` as `gsu2` on `gs2`.`id` = `gsu2`.`session_id` 
+                WHERE `gs2`.`id` = `gs`.`id`
+                GROUP BY `gs2`.`id`
+                ) as count'),
             'u.email'
         ])
         ->from('game_sessions as gs')
@@ -35,6 +44,7 @@ class SessionsController extends Controller
         })
             ->get()
             ->all();
+
 
         return view('admin.sessions.index', compact('sessions'));
     }

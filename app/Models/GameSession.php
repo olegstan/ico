@@ -152,4 +152,26 @@ class GameSession extends Model
             return false;
         }
     }
+
+    /**
+     * @param $sessionId
+     * @return bool
+     */
+    public static function start($sessionId)
+    {
+        /**
+         * @var GameSession $session
+         */
+        $session = GameSession::where('session_id', $sessionId)
+            ->first();
+
+        if($session){
+            $session->update([
+                'started_at' => Carbon::now()
+            ]);
+            return true;
+        }else{
+            return false;
+        }
+    }
 }
