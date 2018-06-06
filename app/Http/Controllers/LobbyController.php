@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests;
 use App\Http\Requests\Lobby\OpenSessionRequest;
 use App\Http\Requests\Lobby\CloseSessionRequest;
+use App\Models\GameBet;
 use App\Models\GameSession;
 use Auth;
 use Session;
@@ -19,7 +20,12 @@ class LobbyController extends Controller
      */
     public function getIndex()
     {
-        return view('lobby.index');
+        $bets = GameBet::with(['game'])
+            ->get()
+            ->all();
+
+
+        return view('lobby.index', compact('bets'));
     }
     /**
      * Show the application dashboard.

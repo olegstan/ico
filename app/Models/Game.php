@@ -23,8 +23,17 @@ class Game extends Model
      */
     protected $fillable = [
         'name',
+        'logo',
         'need_users'
     ];
+
+    /**
+     * @return string
+     */
+    public function getLogo()
+    {
+        return '/games/' . $this->logo;
+    }
 
     /**
      *

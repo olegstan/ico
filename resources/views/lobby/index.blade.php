@@ -33,18 +33,20 @@
                                                 <h2 class="h1">Popular Games&nbsp;<a class="btn pull-right" href="/games/" target="_self"> Show All </a></h2>
                                             </div>
                                             <div class="owl-carousel" data-stage-padding="70" data-item-padding="10" data-loop="true">
-                                                <a class="angled-img" href="/lucky-casino/">
-                                                    <div class="img">
-                                                        <img src="/wp-content/uploads/2018/01/11.jpg" alt="">
-                                                    </div>
-                                                    <div class="over-info">
-                                                        <div>
+                                                @foreach($bets as $bet)
+                                                    <a class="angled-img" href="{{ $bet->openUrl()  }}">
+                                                        <div class="img">
+                                                            <img src="{{ $bet->game->getLogo() }}" alt="">
+                                                        </div>
+                                                        <div class="over-info">
                                                             <div>
-                                                                <h4>Lucky Casino</h4>
+                                                                <div>
+                                                                    <h4>{{ $bet->game->name }} {{ $bet->bet }} BTC</h4>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                    </div>
-                                                </a>
+                                                    </a>
+                                                @endforeach
                                                 <div class="owl-nav">
                                                     <div class="owl-prev"></div>
                                                     <div class="owl-next"></div>

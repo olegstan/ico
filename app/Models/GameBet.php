@@ -21,4 +21,20 @@ class GameBet extends Model
         'game_id',
         'bet'
     ];
+
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne
+     */
+    public function game()
+    {
+        return $this->hasOne(Game::class, 'id', 'game_id');
+    }
+
+    /**
+     * @return string
+     */
+    public function openUrl()
+    {
+        return route('api.get.open.session')  . '?bet_id=' . $this->id;
+    }
 }
