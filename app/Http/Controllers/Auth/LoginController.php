@@ -156,7 +156,7 @@ class LoginController extends Controller
             }
         }
 
-        $user = User::where('email', Request::input(self::$fields['email']))->get()->first();
+        $user = User::where('email', Request::input(self::$fields['remember']['email']))->get()->first();
         if ($user) {
             //TODO send email
 
@@ -212,9 +212,9 @@ class LoginController extends Controller
         /**
          * @var User $user
          */
-        $user = User::where('email', Request::input(self::$fields['email']))->get()->first();
+        $user = User::where('email', Request::input(self::$fields['login']['email']))->get()->first();
 
-        if ($user && Hash::check(Request::input(self::$fields['password']), $user->password)) {
+        if ($user && Hash::check(Request::input(self::$fields['login']['password']), $user->password)) {
             //TODO send email
 
 
