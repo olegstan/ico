@@ -241,15 +241,24 @@ class LoginController extends Controller
      */
     protected $redirectTo = '/admin/home';
 
-    /**
-     * Create a new controller instance.
-     *
-     * @return void
-     */
-    public function __construct()
-    {
-        $this->middleware('guest', ['except' => 'logout']);
-    }
+//    /**
+//     * Create a new controller instance.
+//     *
+//     * @return void
+//     */
+//    public function __construct()
+//    {
+//        $this->middleware('guest', ['except' => 'logout']);
+//    }
 
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\RedirectResponse
+     */
+    public function logout(Request $request)
+    {
+        Auth::logout();
+        return redirect()->to('/');
+    }
     
 }
