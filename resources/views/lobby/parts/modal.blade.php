@@ -10,15 +10,13 @@
                     <div>
                         <span class="lwa-status"></span>
 
-                        <p>
-                            Username: </p>
+                        <p>Username: </p>
                         <div class="youplay-input">
                             <input type="text" name="user_login" id="user_login-1" class="input" size="20"
                                    tabindex="10">
                         </div>
 
-                        <p>
-                            E-mail: </p>
+                        <p>E-mail: </p>
                         <div class="youplay-input">
                             <input type="text" name="user_email" id="user_email-1" class="input" size="25"
                                    tabindex="20">
@@ -31,6 +29,7 @@
 
                         <button class="btn ml-3" name="wp-submit" id="wp-submit-1" tabindex="100">Register</button>
 
+                        {{ csrf_field() }}
                         <input type="hidden" name="login-with-ajax" value="register">
                     </div>
                 </form>

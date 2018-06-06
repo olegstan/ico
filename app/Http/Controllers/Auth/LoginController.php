@@ -39,6 +39,10 @@ class LoginController extends Controller
         switch (Request::input('login-with-ajax')){
             case 'login':
                 return $this->prefix($this->login());
+            case 'register':
+                return $this->prefix($this->register());
+            case 'remember':
+                return $this->prefix($this->remember());
             default:
                 return $this->prefix([
                     'error' => 'Not found action',
@@ -48,21 +52,87 @@ class LoginController extends Controller
         }
     }
 
+    /**
+     * @param $json
+     * @return string
+     */
     public function prefix($json)
     {
         return Request::input('callback') . '(' . json_encode($json) . ')';
     }
 
+    
+    public function register()
+    {
+
+    }
+
+    /**
+     * @return array
+     */
+    public function remember()
+    {
+        $validator = Validator::make(Request::all(), [
+            self::$fields['email'] => 'required|email|max:255',
+        ]);
+
+        $validator->setCustomMessages([
+            self::$fields['email'] . '.required' => 'Email required',
+            self::$fields['email'] . '.email' => 'Email not correct',
+        ]);
+
+        if ($validator->fails()) {
+            if ($validator->fails()) {
+                $errorMessage = '<strong>ERROR</strong>';
+
+                foreach($validator->errors()->all() as $error){
+                    if(is_string($error) && isset($error)){
+                        $errorMessage .= ' ' . $error;
+                    }
+                }
+
+                return [
+                    'error' => $errorMessage,
+                    'result' => false,
+                    'action' => Request::input('login-with-ajax')
+                ];
+            }
+        }
+
+        $user = User::where('email', Request::input(self::$fields['email']))->get()->first();
+        if ($user) {
+            //TODO send email
+
+
+
+
+            return [
+                'result' => true,
+                'action' => Request::input('login-with-ajax')
+            ];
+        }
+
+        return [
+            'error' => '<strong>ERROR</strong>User not found',
+            'result' => false,
+            'action' => Request::input('login-with-ajax')
+        ];
+    }
+
+    /**
+     * @return array
+     */
     public function login()
     {
         $validator = Validator::make(Request::all(), [
-            self::$fields['email'] => 'required|max:255',
+            self::$fields['email'] => 'required|email|max:255',
             self::$fields['password'] => 'required',
         ]);
 
         $validator->setCustomMessages([
-            'pwd.required' => 'Password required',
-            'email.required' => 'Email required',
+            self::$fields['password'] . '.required' => 'Password required',
+            self::$fields['email'] . '.required' => 'Email required',
+            self::$fields['email'] . '.email' => 'Email not correct',
         ]);
 
         if ($validator->fails()) {
@@ -88,6 +158,10 @@ class LoginController extends Controller
         $user = User::where('email', Request::input(self::$fields['email']))->get()->first();
 
         if ($user && Hash::check(Request::input(self::$fields['password']), $user->password)) {
+            //TODO send email
+
+
+
             Auth::loginUsingId($user->id);
             return [
                 'result' => true,
@@ -96,11 +170,11 @@ class LoginController extends Controller
 
         }
 
-        return $this->prefix([
-            'error' => 'Неверный логин/пароль',
+        return [
+            'error' => 'Not correct login or password',
             'result' => false,
             'action' => Request::input('login-with-ajax')
-        ]);
+        ];
     }
 
     /**

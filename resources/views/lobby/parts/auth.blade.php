@@ -51,8 +51,7 @@
                            title="Password Lost and Found">Lost password?</a>
 
                         |
-                        <a href="/register-2/"
-                           class="lwa-links-register lwa-links-modal no-fade">Register</a>
+                        <a href="/register-2/" class="lwa-links-register lwa-links-modal no-fade">Register</a>
 
                     </form>
                     <form class="lwa-remember block-content"
@@ -81,6 +80,7 @@
                                     <td class="lwa-remember-buttons">
                                         <button class="btn btn-sm">Get New Password</button>
                                         <a href="#" class="lwa-links-remember-cancel">Cancel</a>
+                                        {{ csrf_field() }}
                                         <input type="hidden" name="login-with-ajax" value="remember">
                                     </td>
                                 </tr>
