@@ -5,7 +5,12 @@ jQuery(document).ready(function (a) {
         })) : i.attr("class", "lwa-status lwa-status-invalid").html("An error has occured. Please try again.")
     }
 
-    a("#LoginWithAjax").length > 0 && (a("#LoginWithAjax").addClass("lwa"), a("#LoginWithAjax_Status").addClass("lwa-status"), a("#LoginWithAjax_Register").addClass("lwa-register"), a("#LoginWithAjax_Remember").addClass("lwa-remember"), a("#LoginWithAjax_Links_Remember").addClass("lwa-links-remember"), a("#LoginWithAjax_Links_Remember_Cancel").addClass("lwa-links-remember-cancel"), a("#LoginWithAjax_Form").addClass("lwa-form")), a("form.lwa-form, form.lwa-remember, div.lwa-register form").submit(function (i) {
+    a("#LoginWithAjax").length > 0 && (a("#LoginWithAjax").addClass("lwa"), a("#LoginWithAjax_Status").addClass("lwa-status"),
+        a("#LoginWithAjax_Register").addClass("lwa-register"),
+        a("#LoginWithAjax_Remember").addClass("lwa-remember"),
+        a("#LoginWithAjax_Links_Remember").addClass("lwa-links-remember"),
+        a("#LoginWithAjax_Links_Remember_Cancel").addClass("lwa-links-remember-cancel"),
+        a("#LoginWithAjax_Form").addClass("lwa-form")), a("form.lwa-form, form.lwa-remember, div.lwa-register form").submit(function (i) {
         i.preventDefault();
         var n = a(this), t = n.find(".lwa-status");
         0 == t.length && (t = a('<span class="lwa-status"></span>'), n.prepend(t));
@@ -33,14 +38,12 @@ jQuery(document).ready(function (a) {
         }) : null == i.redirect ? window.location.reload() : window.location = i.redirect)
     }), a(".lwa-modal").each(function (e, i) {
         var n = a(i);
+        console.log(n);
         n.parents(".lwa").data("modal", n), a("body").append(a('<div class="lwa"></div>').append(n))
     }), a(document).on("click", ".lwa-links-modal", function (e) {
-        console.log(a);
-        console.log(a(this).parents(".lwa"));
-        console.log(a(this).parents(".lwa").data("modal"));
 
         e.preventDefault();
-        var target = a(this).parents(".lwa").data("modal"); target.reveal({
+        target = a(this).parents(".lwa").data("modal"), target.reveal({
             modalbgclass: "lwa-modal-bg",
             dismissmodalclass: "lwa-modal-close"
         })

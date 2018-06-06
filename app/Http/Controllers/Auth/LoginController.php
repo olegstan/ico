@@ -27,8 +27,16 @@ class LoginController extends Controller
     use AuthenticatesUsers;
 
     public static $fields = [
-        'email' => 'log',
-        'password' => 'pwd'
+        'login' => [
+            'email' => 'log',
+            'password' => 'pwd'
+        ],
+        'remember' => [
+            'email' => 'user_login'
+        ],
+        'register' => [
+            'email' => 'user_login'
+        ]
     ];
 
     /**
@@ -61,9 +69,58 @@ class LoginController extends Controller
         return Request::input('callback') . '(' . json_encode($json) . ')';
     }
 
-    
+
     public function register()
     {
+        $validator = Validator::make(Request::all(), [
+            self::$fields['remember']['email'] => 'required|email|max:255|unique:users,email',
+        ]);
+
+        $validator->setCustomMessages([
+            self::$fields['remember']['email'] . '.required' => 'Email required',
+            self::$fields['remember']['email'] . '.email' => 'Email not correct',
+            self::$fields['remember']['email'] . '.unique' => 'Email not unique',
+        ]);
+
+        if ($validator->fails()) {
+            if ($validator->fails()) {
+                $errorMessage = '<strong>ERROR</strong>';
+
+                foreach($validator->errors()->all() as $error){
+                    if(is_string($error) && isset($error)){
+                        $errorMessage .= ' ' . $error;
+                    }
+                }
+
+                return [
+                    'error' => $errorMessage,
+                    'result' => false,
+                    'action' => Request::input('login-with-ajax')
+                ];
+            }
+        }
+
+
+
+        $user = User::create([
+            'email' => Request::input(self::$fields['remember']['email'])
+        ]);
+
+        if($user){
+            //TODO send email
+
+
+            return [
+                'result' => true,
+                'action' => Request::input('login-with-ajax')
+            ];
+        }else{
+            return [
+                'error' => '<strong>ERROR</strong>' . ' user not saved',
+                'result' => true,
+                'action' => Request::input('login-with-ajax')
+            ];
+        }
 
     }
 
@@ -73,12 +130,12 @@ class LoginController extends Controller
     public function remember()
     {
         $validator = Validator::make(Request::all(), [
-            self::$fields['email'] => 'required|email|max:255',
+            self::$fields['remember']['email'] => 'required|email|max:255',
         ]);
 
         $validator->setCustomMessages([
-            self::$fields['email'] . '.required' => 'Email required',
-            self::$fields['email'] . '.email' => 'Email not correct',
+            self::$fields['remember']['email'] . '.required' => 'Email required',
+            self::$fields['remember']['email'] . '.email' => 'Email not correct',
         ]);
 
         if ($validator->fails()) {
@@ -125,14 +182,14 @@ class LoginController extends Controller
     public function login()
     {
         $validator = Validator::make(Request::all(), [
-            self::$fields['email'] => 'required|email|max:255',
-            self::$fields['password'] => 'required',
+            self::$fields['login']['email'] => 'required|email|max:255',
+            self::$fields['login']['password'] => 'required',
         ]);
 
         $validator->setCustomMessages([
-            self::$fields['password'] . '.required' => 'Password required',
-            self::$fields['email'] . '.required' => 'Email required',
-            self::$fields['email'] . '.email' => 'Email not correct',
+            self::$fields['login']['password'] . '.required' => 'Password required',
+            self::$fields['login']['email'] . '.required' => 'Email required',
+            self::$fields['login']['email'] . '.email' => 'Email not correct',
         ]);
 
         if ($validator->fails()) {
