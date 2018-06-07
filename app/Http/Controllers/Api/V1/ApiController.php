@@ -36,7 +36,7 @@ class ApiController extends Controller
      * @param CloseSessionRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function postStartSession(CloseSessionRequest $request)
+    public function getStartSession(CloseSessionRequest $request)
     {
         GameSession::start($request->input('session_id'));
 
@@ -49,7 +49,7 @@ class ApiController extends Controller
      * @param CloseSessionRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function postCloseSession(CloseSessionRequest $request)
+    public function getCloseSession(CloseSessionRequest $request)
     {
         GameSession::close($request->input('session_id'), $request->input('user_id'));
 
@@ -62,7 +62,7 @@ class ApiController extends Controller
      * @param ExitSessionRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function postExitSession(ExitSessionRequest $request)
+    public function getExitSession(ExitSessionRequest $request)
     {
         GameSession::exit($request->input('session_id'), $request->input('user_id'));
 
@@ -74,7 +74,7 @@ class ApiController extends Controller
     /**
      * @return \Illuminate\Http\JsonResponse
      */
-    public function listSessions()
+    public function getListSessions()
     {
         $sessions = GameSession::select([
             'gs.id',

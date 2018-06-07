@@ -158,7 +158,7 @@ class GameSession extends Model
      * @param $userId
      * @return bool
      */
-    public function exit($sessionId, $userId)
+    public static function exit($sessionId, $userId)
     {
         /**
          * @var GameSession $session
