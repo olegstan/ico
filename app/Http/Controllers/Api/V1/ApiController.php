@@ -8,6 +8,7 @@ use App\Http\Requests\Lobby\OpenSessionRequest;
 use App\Http\Requests\Lobby\CloseSessionRequest;
 use App\Models\GameSession;
 use Auth;
+use DB;
 use Session;
 
 class ApiController extends Controller
@@ -20,6 +21,12 @@ class ApiController extends Controller
     {
         Session::put('bet_id', $request->input('bet_id'));
         $id = GameSession::open($request->input('bet_id'), Auth::id());
+
+
+        return response()->json([
+            'result' => 'success',
+            'id' => $id
+        ]);
 
         return response()->redirectTo(env('GAME_HOST', '') . '/open?session_io=' . $id . '&user_id=' . Auth::id());
     }
@@ -50,8 +57,37 @@ class ApiController extends Controller
         ]);
     }
 
+    /**
+     * @return \Illuminate\Http\JsonResponse
+     */
     public function listSessions()
     {
+        $sessions = GameSession::select([
+            'gs.id',
+            'gs.started_at',
+            'gs.ended_at',
+            'gb.bet',
+            DB::raw('(SELECT COUNT(`gsu2`.`id`) FROM `game_sessions` as `gs2`
+                left join `game_sessions_users` as `gsu2` on `gs2`.`id` = `gsu2`.`session_id` 
+                WHERE `gs2`.`id` = `gs`.`id`
+                GROUP BY `gs2`.`id`
+                ) as count'),
+            'u.email'
+        ])
+            ->from('game_sessions as gs')
+            ->leftJoin('users as u', function ($j){
+                $j->on('gs.winner_id', '=', 'u.id');
+            })->leftJoin('game_bets as gb', function ($j){
+                $j->on('gs.bet_id', '=', 'gb.id');
+            })->leftJoin('games as g', function ($j){
+                $j->on('gb.game_id', '=', 'g.id');
+            })
+            ->get()
+            ->all();
 
+        return response()->json([
+            'result' => 'success',
+            'sessions' => $sessions
+        ]);
     }
 }
