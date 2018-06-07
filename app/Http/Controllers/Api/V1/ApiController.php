@@ -97,11 +97,8 @@ class ApiController extends Controller
                 $j->on('gb.game_id', '=', 'g.id');
             })
             ->get()
-            ->all();
+            ->toArray();
 
-        return response()->json([
-            'result' => 'success',
-            'sessions' => $sessions
-        ]);
+        dd($sessions);
     }
 }
