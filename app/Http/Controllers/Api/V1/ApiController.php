@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api\V1;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use App\Http\Requests\Lobby\OpenSessionRequest;
+use App\Http\Requests\Lobby\ExitSessionRequest;
 use App\Http\Requests\Lobby\CloseSessionRequest;
 use App\Models\GameSession;
 use Auth;
@@ -50,7 +51,20 @@ class ApiController extends Controller
      */
     public function postCloseSession(CloseSessionRequest $request)
     {
-        GameSession::close($request->input('session_id'), $request->input('session_id'));
+        GameSession::close($request->input('session_id'), $request->input('user_id'));
+
+        return response()->json([
+            'result' => 'success'
+        ]);
+    }
+
+    /**
+     * @param ExitSessionRequest $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function postExitSession(ExitSessionRequest $request)
+    {
+        GameSession::exit($request->input('session_id'), $request->input('user_id'));
 
         return response()->json([
             'result' => 'success'

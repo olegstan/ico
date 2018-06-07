@@ -155,6 +155,33 @@ class GameSession extends Model
 
     /**
      * @param $sessionId
+     * @param $userId
+     * @return bool
+     */
+    public function exit($sessionId, $userId)
+    {
+        /**
+         * @var GameSession $session
+         */
+        $session = GameSession::where('session_id', $sessionId)
+            ->whereNull('ended_at')
+            ->first();
+
+        if($session){
+            $user = GameSessionUser::where('user_id', $userId)
+                ->where('session_id', $sessionId)
+                ->first();
+
+            if($user){
+                $user->delete();
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /**
+     * @param $sessionId
      * @return bool
      */
     public static function start($sessionId)
