@@ -6,6 +6,7 @@
 /.idea
 /.vscode
 /.vagrant
+/games/bomberman/*
 /public/js/laroute.js
 Homestead.json
 Homestead.yaml
