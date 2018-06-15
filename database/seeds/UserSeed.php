@@ -34,6 +34,7 @@ class UserSeed extends Seeder
                 'password' => bcrypt('gamer'),
                 'email' => 'gamer@gamer.com'.$i,
                 'role_id' => User::GAMER,
+                'credits' => 100,
                 'remember_token' => '',
             ]);
         }

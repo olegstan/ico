@@ -107,7 +107,7 @@ class GameSession extends Model
                             'session_id' => $session->id
                         ]);
 
-                        $user->decrement($gameBet->bet);
+                        $user->decrement('credits', $gameBet->bet);
 
                         return $session->id;
                     }else{
@@ -120,7 +120,7 @@ class GameSession extends Model
                             'session_id' => $session->id
                         ]);
 
-                        $user->decrement($gameBet->bet);
+                        $user->decrement('credits', $gameBet->bet);
 
                         return $session->id;
                     }
@@ -135,7 +135,7 @@ class GameSession extends Model
                     'session_id' => $session->id
                 ]);
 
-                $user->decrement($gameBet->bet);
+                $user->decrement('credits', $gameBet->bet);
 
                 return $session->id;
             }
