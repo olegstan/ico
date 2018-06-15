@@ -40,7 +40,7 @@ class GameSession extends Model
      */
     public static function open($betId, $userId)
     {
-        DB::transaction(function () use ($betId, $userId){
+        return DB::transaction(function () use ($betId, $userId){
             //проверяем есть ли такая ставка у этой игры
             $gameBet = GameBet::findOrFail($betId);
             /**
