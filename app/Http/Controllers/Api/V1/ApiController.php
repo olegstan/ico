@@ -16,20 +16,16 @@ class ApiController extends Controller
 {
     /**
      * @param OpenSessionRequest $request
-     * @return \Illuminate\Http\JsonResponse
+     * @return \Illuminate\Http\RedirectResponse
+     * @throws \Exception
+     * @throws \Throwable
      */
     public function getOpenSession(OpenSessionRequest $request)
     {
         Session::put('bet_id', $request->input('bet_id'));
         $id = GameSession::open($request->input('bet_id'), Auth::id());
 
-
-        return response()->json([
-            'result' => 'success',
-            'id' => $id
-        ]);
-
-        return response()->redirectTo(env('GAME_HOST', '') . '/open?session_io=' . $id . '&user_id=' . Auth::id());
+        return response()->redirectTo(env('GAME_HOST', '') . '/?session_io=' . $id . '&user_id=' . Auth::id());
     }
 
     /**

@@ -23,6 +23,9 @@ class OpenSessionRequest extends FormRequest
     public function rules()
     {
         //todo add chech exists bet
+        //todo check enought credits
+
+
 
         return [
             'bet_id' => 'required',

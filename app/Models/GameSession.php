@@ -35,41 +35,47 @@ class GameSession extends Model
     /**
      * @param $betId
      * @param $userId
-     * @return mixed
+     * @throws \Exception
+     * @throws \Throwable
      */
     public static function open($betId, $userId)
     {
-        //проверяем есть ли такая ставка у этой игры
-        $gameBet = GameBet::findOrFail($betId);
-        /**
-         * @var Game $game
-         */
-        $game = Game::findOrFail($gameBet->game_id);
+        DB::transaction(function () use ($betId, $userId){
+            //проверяем есть ли такая ставка у этой игры
+            $gameBet = GameBet::findOrFail($betId);
+            /**
+             * @var User $user
+             */
+            $user = User::findOrFail($userId);
+            /**
+             * @var Game $game
+             */
+            $game = Game::findOrFail($gameBet->game_id);
 
-        //проверяем есть уже сессия для этой игры
+            //проверяем есть уже сессия для этой игры
 //        echo $betId . " \n";
 //        echo $userId . " \n";
 //        echo " \n";
-        $session = self::whereNull('started_at')
-            ->where('bet_id', $betId)
-            ->get()
-            ->first();
-
-        if($session){
-//            //проверяем нет ли этого пользователя уже в сессии
-            $session = self::whereNull('g.started_at')
-                ->where('g.bet_id', $betId)
-                ->where('u.user_id', $userId)
-                ->from('game_sessions as g')
-                ->leftJoin('game_sessions_users as u', function ($j){
-                    $j->on('u.session_id', '=', 'g.id');
-                })
+            $session = self::whereNull('started_at')
+                ->where('bet_id', $betId)
                 ->get()
                 ->first();
 
             if($session){
-                return $session->id;
-            }else{
+//            //проверяем нет ли этого пользователя уже в сессии
+                $session = self::whereNull('g.started_at')
+                    ->where('g.bet_id', $betId)
+                    ->where('u.user_id', $userId)
+                    ->from('game_sessions as g')
+                    ->leftJoin('game_sessions_users as u', function ($j){
+                        $j->on('u.session_id', '=', 'g.id');
+                    })
+                    ->get()
+                    ->first();
+
+                if($session){
+                    return $session->id;
+                }else{
 //                select COUNT(u.session_id) as count, `g`.`id`
 //from `game_sessions` as `g`
 //left join `game_sessions_users` as `u` on `u`.`session_id` = `g`.`id`
@@ -79,54 +85,61 @@ class GameSession extends Model
 //group by `g`.`id` having COUNT(u.session_id) < 4
 
 
-                 $session = self::select(DB::raw('
+                    $session = self::select(DB::raw('
                     g.id,
                     COUNT(u.session_id) as count
                  '))
-                    ->whereNull('g.started_at')
-                    ->where('g.bet_id', $betId)
-                    ->from('game_sessions as g')
-                    ->leftJoin('game_sessions_users as u', function ($j) use ($userId){
-                        $j->on('u.session_id', '=', 'g.id');
-                    })
-                    ->whereRaw('g.id NOT IN (SELECT `game_sessions_users`.`session_id` FROM `game_sessions_users` WHERE `game_sessions_users`.`user_id` = ' . $userId . ')')
-                    ->groupBy('g.id')
-                    ->havingRaw('count < ' . $game->need_users)
-                    ->get()
-                    ->first();
+                        ->whereNull('g.started_at')
+                        ->where('g.bet_id', $betId)
+                        ->from('game_sessions as g')
+                        ->leftJoin('game_sessions_users as u', function ($j) use ($userId){
+                            $j->on('u.session_id', '=', 'g.id');
+                        })
+                        ->whereRaw('g.id NOT IN (SELECT `game_sessions_users`.`session_id` FROM `game_sessions_users` WHERE `game_sessions_users`.`user_id` = ' . $userId . ')')
+                        ->groupBy('g.id')
+                        ->havingRaw('count < ' . $game->need_users)
+                        ->get()
+                        ->first();
 
-                 if($session){
-                     GameSessionUser::create([
-                         'user_id' => $userId,
-                         'session_id' => $session->id
-                     ]);
+                    if($session){
+                        GameSessionUser::create([
+                            'user_id' => $userId,
+                            'session_id' => $session->id
+                        ]);
 
-                     return $session->id;
-                 }else{
-                     $session = GameSession::create([
-                         'bet_id' => $gameBet->id
-                     ]);
+                        $user->decrement($gameBet->bet);
 
-                     GameSessionUser::create([
-                         'user_id' => $userId,
-                         'session_id' => $session->id
-                     ]);
+                        return $session->id;
+                    }else{
+                        $session = GameSession::create([
+                            'bet_id' => $gameBet->id
+                        ]);
 
-                     return $session->id;
-                 }
+                        GameSessionUser::create([
+                            'user_id' => $userId,
+                            'session_id' => $session->id
+                        ]);
+
+                        $user->decrement($gameBet->bet);
+
+                        return $session->id;
+                    }
+                }
+            }else{
+                $session = GameSession::create([
+                    'bet_id' => $gameBet->id
+                ]);
+
+                GameSessionUser::create([
+                    'user_id' => $userId,
+                    'session_id' => $session->id
+                ]);
+
+                $user->decrement($gameBet->bet);
+
+                return $session->id;
             }
-        }else{
-            $session = GameSession::create([
-                'bet_id' => $gameBet->id
-            ]);
-
-            GameSessionUser::create([
-                'user_id' => $userId,
-                'session_id' => $session->id
-            ]);
-
-            return $session->id;
-        }
+        });
     }
 
     /**
