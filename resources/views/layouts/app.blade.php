@@ -11,7 +11,7 @@
 <div id="wrapper">
 
 @include('partials.topbar')
-@include('partials.sidebar')
+@include('partials.' . (Auth::check() ? Auth::user()->getSlugRole() : '') . '.sidebar')
 
 <!-- Content Wrapper. Contains page content -->
     <div class="content-wrapper">

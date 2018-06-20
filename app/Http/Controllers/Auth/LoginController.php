@@ -69,7 +69,9 @@ class LoginController extends Controller
         return Request::input('callback') . '(' . json_encode($json) . ')';
     }
 
-
+    /**
+     * @return array
+     */
     public function register()
     {
         $validator = Validator::make(Request::all(), [
@@ -103,7 +105,8 @@ class LoginController extends Controller
 
 
         $user = User::create([
-            'email' => Request::input(self::$fields['remember']['email'])
+            'email' => Request::input(self::$fields['remember']['email']),
+            'credits' => 1000
         ]);
 
         if($user){

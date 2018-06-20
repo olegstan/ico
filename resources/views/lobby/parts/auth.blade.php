@@ -145,30 +145,16 @@
                         <table>
                             <tbody>
                             <tr>
-                                {{--<td>--}}
-                                {{--<ul class="list-unstyled lwa-profile-links">--}}
-                                {{--<li id="li-nav-profile"><a id="my-profile" href="http://spin2spin.com/members/fedos/profile/">Profile</a></li><li id="li-nav-forums"><a id="my-forums" href="http://spin2spin.com/members/fedos/forums/">Forums</a></li><li id="li-nav-settings"><a id="my-settings" href="http://spin2spin.com/members/fedos/settings/">Settings</a></li>					<li><a id="wp-logout" href="http://spin2spin.com/auth_login/?action=logout&amp;_wpnonce=0ac5fde3c4&amp;redirect_to=http%3A%2F%2Fspin2spin.com%2F%3Floggedout%3Dtrue">Log Out</a></li>--}}
-                                {{--</ul>--}}
-                                {{--</td>--}}
-                                {{--<td width="80">--}}
-                                {{--<div class="angled-img ml-10">--}}
-                                {{--<div class="img">--}}
-                                {{--</div>--}}
-                                {{--</div>--}}
-                                {{--</td>--}}
                                 <ul class="list-unstyled lwa-profile-links">
-                                    {{--<li id="li-nav-profile"><a id="my-profile"--}}
-                                                               {{--href="http://spin2spin.com/members/fedos/profile/">Profile</a>--}}
-                                    {{--</li>--}}
-                                    {{--<li id="li-nav-forums"><a id="my-forums"--}}
-                                                              {{--href="http://spin2spin.com/members/fedos/forums/">Forums</a>--}}
-                                    {{--</li>--}}
-                                    {{--<li id="li-nav-settings"><a id="my-settings"--}}
-                                                                {{--href="http://spin2spin.com/members/fedos/settings/">Settings</a>--}}
-                                    {{--</li>--}}
-                                    <li><a id="wp-logout"
+                                    <li>
+                                        <a id="wp-logout"
+                                           href="{{ route((Auth::check() ? Auth::user()->getSlugRole() : '') . '.home') }}">Dashboard</a>
+                                    </li>
+                                    <li>
+                                        <a id="wp-logout"
                                            href="{{ route('auth.logout') }}">Log
-                                            Out</a></li>
+                                            Out</a>
+                                    </li>
                                 </ul>
                             </tr>
                             </tbody>

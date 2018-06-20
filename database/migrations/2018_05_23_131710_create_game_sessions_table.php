@@ -17,6 +17,7 @@ class CreateGameSessionsTable extends Migration
             $table->increments('id');
             $table->integer('winner_id')->nullable();
             $table->integer('bet_id');
+            $table->integer('win')->nullable();
             $table->timestamp('started_at')->nullable();
             $table->timestamp('ended_at')->nullable();
             $table->timestamps();

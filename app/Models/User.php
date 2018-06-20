@@ -125,4 +125,19 @@ class User extends Authenticatable
                 return false;
         }
     }
+
+    /**
+     * @return string
+     */
+    public function getSlugRole()
+    {
+        switch ($this->role_id){
+            case self::ADMIN:
+                return 'admin';
+            case self::GAMER:
+                return 'gamer';
+            default:
+                return '';
+        }
+    }
 }

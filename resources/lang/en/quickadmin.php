@@ -32,6 +32,7 @@ return [
 			'id' => 'ID',
 			'email' => 'Email',
 			'bet' => 'Bet',
+			'win' => 'Win',
 			'count' => 'Connected users',
 			'started_at' => 'Date and Time game started',
 			'ended_at' => 'Date and Time game ended',

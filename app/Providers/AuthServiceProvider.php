@@ -88,20 +88,7 @@ class AuthServiceProvider extends ServiceProvider
 
         // Auth gates for: Sessions
         Gate::define('session_access', function ($user) {
-            return in_array($user->role_id, [User::ADMIN]);
+            return in_array($user->role_id, [User::ADMIN, User::GAMER]);
         });
-        Gate::define('session_create', function ($user) {
-            return in_array($user->role_id, [User::ADMIN]);
-        });
-        Gate::define('session_edit', function ($user) {
-            return in_array($user->role_id, [User::ADMIN]);
-        });
-        Gate::define('session_view', function ($user) {
-            return in_array($user->role_id, [User::ADMIN]);
-        });
-        Gate::define('session_delete', function ($user) {
-            return in_array($user->role_id, [User::ADMIN]);
-        });
-
     }
 }

@@ -1,6 +1,7 @@
 <?php
 namespace App\Models;
 
+use App\Helpers\LoggerHelper;
 use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Model;
 use Auth;
@@ -23,6 +24,7 @@ class GameSession extends Model
     protected $fillable = [
         'winner_id',
         'bet_id',
+        'win',
         'started_at',
         'ended_at'
     ];
@@ -86,13 +88,13 @@ class GameSession extends Model
 
 
                     $session = self::select(DB::raw('
-                    g.id,
-                    COUNT(u.session_id) as count
-                 '))
+                        g.id,
+                        COUNT(u.session_id) as count
+                     '))
                         ->whereNull('g.started_at')
                         ->where('g.bet_id', $betId)
                         ->from('game_sessions as g')
-                        ->leftJoin('game_sessions_users as u', function ($j) use ($userId){
+                        ->leftJoin('game_sessions_users as u', function ($j){
                             $j->on('u.session_id', '=', 'g.id');
                         })
                         ->whereRaw('g.id NOT IN (SELECT `game_sessions_users`.`session_id` FROM `game_sessions_users` WHERE `game_sessions_users`.`user_id` = ' . $userId . ')')
@@ -155,11 +157,23 @@ class GameSession extends Model
         $session = GameSession::where('session_id', $sessionId)
             ->first();
 
+        /**
+         * @var User $user
+         */
+        $user = User::where('id', $userId)
+            ->first();
+
         if($session){
+            $win  = $session->getWin();
+
             $session->update([
                 'winner_id' => $userId,
-                'ended_at' => Carbon::now()
+                'ended_at' => Carbon::now(),
+                'win' => $win
             ]);
+
+            $user->increment('credits', $win);
+
             return true;
         }else{
             return false;
@@ -212,6 +226,33 @@ class GameSession extends Model
             return true;
         }else{
             return false;
+        }
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getWin()
+    {
+        try{
+            $bet = GameBet::findOrFail($this->bet_id)->bet;
+
+            $count = self::select(DB::raw('
+                    COUNT(u.session_id) as count
+                 '))
+                ->from('game_sessions as g')
+                ->where('g.id', $this->id)
+                ->leftJoin('game_sessions_users as u', function ($j){
+                    $j->on('u.session_id', '=', 'g.id');
+                })
+                ->groupBy('g.id')
+                ->get()
+                ->first()->count;
+
+            return $bet * $count;
+        }catch (\Exception $e){
+            LoggerHelper::getLogger()->error($e);
+            return 0;
         }
     }
 }
