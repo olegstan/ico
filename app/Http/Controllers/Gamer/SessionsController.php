@@ -6,6 +6,7 @@ use App\Models\GameSession;
 use Illuminate\Support\Facades\Gate;
 use App\Http\Controllers\Controller;
 use DB;
+use Auth;
 
 class SessionsController extends Controller
 {
@@ -22,6 +23,7 @@ class SessionsController extends Controller
 
         $sessions = GameSession::select([
             'gs.id',
+            'gs.win',
             'gs.started_at',
             'gs.ended_at',
             'gb.bet',
@@ -33,7 +35,10 @@ class SessionsController extends Controller
             'u.email'
         ])
         ->from('game_sessions as gs')
-        ->leftJoin('users as u', function ($j){
+        ->where('gsu.user_id', Auth::id())
+        ->leftJoin('game_sessions_users as gsu', function ($j){
+            $j->on('gs.id', '=', 'gsu.session_id');
+        })->leftJoin('users as u', function ($j){
             $j->on('gs.winner_id', '=', 'u.id');
         })->leftJoin('game_bets as gb', function ($j){
             $j->on('gs.bet_id', '=', 'gb.id');

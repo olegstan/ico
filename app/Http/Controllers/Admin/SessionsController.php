@@ -24,6 +24,7 @@ class SessionsController extends Controller
 
         $sessions = GameSession::select([
             'gs.id',
+            'gs.win',
             'gs.started_at',
             'gs.ended_at',
             'gb.bet',

@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <title>
-    @lang('quickadmin.quickadmin_title')
+    {{ env('APP_NAME') }}
 </title>
 
 <meta http-equiv="X-UA-Compatible"
