@@ -113,12 +113,11 @@ class LoginController extends Controller
         if($user){
             $email = Request::input(self::$fields['remember']['email']);
 
-            Mail::queue('emails.register', [
+            Mail::send('emails.register', [
                 'login' => $email,
                 'password' => $password
             ], function ($message) use ($email) {
-                $message->to($email, 'Успешная регистрация')->subject('Успешная регистрация');
-                $message->from(env('MAIL_SENDER'));
+                $message->to($email, 'Успешная регистрация')->subject('Успешная регистрация')->from(env('MAIL_SENDER'));
             });
 
 
@@ -176,9 +175,8 @@ class LoginController extends Controller
             ]);
 
             $email = Request::input(self::$fields['remember']['email']);
-            Mail::queue('emails.forgot', ['password' => $password], function ($message) use ($email) {
-                $message->to($email, 'Восстановление пароля')->subject('Восстановление пароля');
-                $message->from(env('MAIL_SENDER'));
+            Mail::send('emails.forgot', ['password' => $password], function ($message) use ($email) {
+                $message->to($email, 'Восстановление пароля')->subject('Восстановление пароля')->from(env('MAIL_SENDER'));
             });
 
 
