@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Auth;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Request;
-use Socialite;
+use Mail;
 use Validator;
 use Auth;
 use Hash;
@@ -103,14 +103,23 @@ class LoginController extends Controller
         }
 
 
-
+        $password = str_random(5);
         $user = User::create([
             'email' => Request::input(self::$fields['remember']['email']),
-            'credits' => 1000
+            'credits' => 1000,
+            'password' => bcrypt($password)
         ]);
 
         if($user){
-            //TODO send email
+            $email = Request::input(self::$fields['remember']['email']);
+
+            Mail::queue('emails.register', [
+                'login' => $email,
+                'password' => $password
+            ], function ($message) use ($email) {
+                $message->to($email, 'Успешная регистрация')->subject('Успешная регистрация');
+                $message->from(env('MAIL_SENDER'));
+            });
 
 
             return [
@@ -161,9 +170,16 @@ class LoginController extends Controller
 
         $user = User::where('email', Request::input(self::$fields['remember']['email']))->get()->first();
         if ($user) {
-            //TODO send email
+            $password = str_random(10);
+            $user->update([
+                'password' => bcrypt($password)
+            ]);
 
-
+            $email = Request::input(self::$fields['remember']['email']);
+            Mail::queue('emails.forgot', ['password' => $password], function ($message) use ($email) {
+                $message->to($email, 'Восстановление пароля')->subject('Восстановление пароля');
+                $message->from(env('MAIL_SENDER'));
+            });
 
 
             return [
@@ -218,10 +234,6 @@ class LoginController extends Controller
         $user = User::where('email', Request::input(self::$fields['login']['email']))->get()->first();
 
         if ($user && Hash::check(Request::input(self::$fields['login']['password']), $user->password)) {
-            //TODO send email
-
-
-
             Auth::loginUsingId($user->id);
             return [
                 'result' => true,
