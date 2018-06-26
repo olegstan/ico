@@ -107,7 +107,8 @@ class LoginController extends Controller
         $user = User::create([
             'email' => Request::input(self::$fields['remember']['email']),
             'credits' => 1000,
-            'password' => bcrypt($password)
+            'password' => bcrypt($password),
+            'role_id' => User::GAMER
         ]);
 
         if($user){
