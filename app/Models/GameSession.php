@@ -60,6 +60,7 @@ class GameSession extends Model
 //        echo $userId . " \n";
 //        echo " \n";
             $session = self::whereNull('started_at')
+                ->whereNull('winner_id')
                 ->where('bet_id', $betId)
                 ->get()
                 ->first();
@@ -97,6 +98,7 @@ class GameSession extends Model
                         g.id,
                         COUNT(u.session_id) as count
                      '))
+                        ->whereNull('g.winner_id')
                         ->whereNull('g.started_at')
                         ->where('g.bet_id', $betId)
                         ->from('game_sessions as g')
