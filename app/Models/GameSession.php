@@ -65,7 +65,11 @@ class GameSession extends Model
 
             if($session){
 //            //проверяем нет ли этого пользователя уже в сессии
-                $session = self::whereNull('g.started_at')
+                $session = self::select([
+                        'g.id'
+                    ])
+                    ->from('game_sessions as g')
+                    ->whereNull('g.started_at')
                     ->where('g.bet_id', $betId)
                     ->where('u.user_id', $userId)
                     ->from('game_sessions as g')
@@ -154,7 +158,7 @@ class GameSession extends Model
         /**
          * @var GameSession $session
          */
-        $session = GameSession::where('session_id', $sessionId)
+        $session = GameSession::where('id', $sessionId)
             ->first();
 
         /**
@@ -216,7 +220,7 @@ class GameSession extends Model
         /**
          * @var GameSession $session
          */
-        $session = GameSession::where('session_id', $sessionId)
+        $session = GameSession::where('id', $sessionId)
             ->first();
 
         if($session){
