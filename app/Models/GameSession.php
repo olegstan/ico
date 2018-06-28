@@ -37,6 +37,7 @@ class GameSession extends Model
     /**
      * @param $betId
      * @param $userId
+     * @return mixed
      * @throws \Exception
      * @throws \Throwable
      */
@@ -69,6 +70,7 @@ class GameSession extends Model
                         'g.id'
                     ])
                     ->from('game_sessions as g')
+                    ->whereNull('g.winner_id')
                     ->whereNull('g.started_at')
                     ->where('g.bet_id', $betId)
                     ->where('u.user_id', $userId)
