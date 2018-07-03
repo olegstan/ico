@@ -114,7 +114,8 @@ class GameSession extends Model
                     if($session){
                         GameSessionUser::create([
                             'user_id' => $userId,
-                            'session_id' => $session->id
+                            'session_id' => $session->id,
+                            'credits_before' => $user->credits
                         ]);
 
                         $user->decrement('credits', $gameBet->bet);
@@ -127,7 +128,8 @@ class GameSession extends Model
 
                         GameSessionUser::create([
                             'user_id' => $userId,
-                            'session_id' => $session->id
+                            'session_id' => $session->id,
+                            'credits_before' => $user->credits
                         ]);
 
                         $user->decrement('credits', $gameBet->bet);
@@ -142,7 +144,8 @@ class GameSession extends Model
 
                 GameSessionUser::create([
                     'user_id' => $userId,
-                    'session_id' => $session->id
+                    'session_id' => $session->id,
+                    'credits_before' => $user->credits
                 ]);
 
                 $user->decrement('credits', $gameBet->bet);
@@ -171,7 +174,14 @@ class GameSession extends Model
         $user = User::where('id', $userId)
             ->first();
 
-        if($session){
+        /**
+         * @var GameBet $bet
+         */
+        $bet = GameBet::where('id', $session->bet_id)
+            ->first();
+
+        if($session)
+        {
             $win  = $session->getWin();
 
             $session->update([
@@ -180,7 +190,26 @@ class GameSession extends Model
                 'win' => $win
             ]);
 
-            $user->increment('credits', $win);
+            $gameSessions = GameSessionUser::where('session_id', $sessionId)->get()->all();
+
+            foreach ($gameSessions as $gameSession)
+            {
+                if($gameSession->user_id == $userId)
+                {
+                    $user->increment('credits', $win);
+
+                    $gameSession->update([
+                        'credits_after' => $user->credits
+                    ]);
+                }else{
+                    $userSess = User::where('id', $gameSession->user_id)
+                        ->first();
+
+                    $gameSession->update([
+                        'credits_after' => $userSess->credits - $bet->bet
+                    ]);
+                }
+            }
 
             return true;
         }else{

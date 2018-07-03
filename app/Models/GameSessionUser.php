@@ -19,6 +19,8 @@ class GameSessionUser extends Model
      */
     protected $fillable = [
         'user_id',
-        'session_id'
+        'session_id',
+        'credits_before',
+        'credits_after'
     ];
 }

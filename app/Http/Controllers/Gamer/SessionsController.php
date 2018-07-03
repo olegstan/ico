@@ -24,9 +24,13 @@ class SessionsController extends Controller
         $sessions = GameSession::select([
             'gs.id',
             'gs.win',
+            'gs.winner_id',
             'gs.started_at',
             'gs.ended_at',
             'gb.bet',
+            'g.name',
+            'gsu.credits_before',
+            'gsu.credits_after',
             DB::raw('(SELECT COUNT(`gsu2`.`id`) FROM `game_sessions` as `gs2`
                 left join `game_sessions_users` as `gsu2` on `gs2`.`id` = `gsu2`.`session_id` 
                 WHERE `gs2`.`id` = `gs`.`id`

@@ -29,13 +29,17 @@ return [
 	'sessions' => [
 		'title' => 'Sessions',
 		'fields' => [
-			'id' => 'ID',
+			'id' => 'Session ID',
 			'email' => 'Email',
+			'game_name' => 'Game name',
+			'credits_before' => 'Balance before',
+			'result' => 'result',
+			'credits_after' => 'Balance after ',
 			'bet' => 'Bet',
 			'win' => 'Win',
 			'count' => 'Connected users',
-			'started_at' => 'Date and Time game started',
-			'ended_at' => 'Date and Time game ended',
+			'started_at' => 'Time start',
+			'ended_at' => 'Time end',
 		],
 	],
 

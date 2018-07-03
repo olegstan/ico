@@ -22,10 +22,11 @@
                 <thead>
                 <tr>
                     <th>@lang('quickadmin.sessions.fields.id')</th>
-                    <th>@lang('quickadmin.sessions.fields.email')</th>
+                    <th>@lang('quickadmin.sessions.fields.game_name')</th>
+                    <th>@lang('quickadmin.sessions.fields.credits_before')</th>
                     <th>@lang('quickadmin.sessions.fields.bet')</th>
-                    <th>@lang('quickadmin.sessions.fields.win')</th>
-                    <th>@lang('quickadmin.sessions.fields.count')</th>
+                    <th>@lang('quickadmin.sessions.fields.result')</th>
+                    <th>@lang('quickadmin.sessions.fields.credits_after')</th>
                     <th>@lang('quickadmin.sessions.fields.started_at')</th>
                     <th>@lang('quickadmin.sessions.fields.ended_at')</th>
                 </tr>
@@ -36,10 +37,11 @@
                         @foreach ($sessions as $game)
                             <tr data-entry-id="{{ $game->id }}">
                                 <td field-key='id'>{{ $game->id }}</td>
-                                <td field-key='email'>{{ $game->email ? $game->email : 'no winner' }}</td>
+                                <td field-key='game_name'>{{ $game->name }}</td>
+                                <td field-key='credits_before'>{{ $game->credits_before }}</td>
                                 <td field-key='bet'>{{ $game->bet }}</td>
-                                <td field-key='bet'>{{ $game->win }}</td>
-                                <td field-key='count'>{{ $game->count }}</td>
+                                <td field-key='result'>{{ Auth::id() == $user->winner_id ? 'win' : 'lose' }}</td>
+                                <td field-key='credits_after'>{{ $game->credits_after }}</td>
                                 <td field-key='started_at'>{{ $game->started_at }}</td>
                                 <td field-key='ended_at'>{{ $game->ended_at }}</td>
                             </tr>
