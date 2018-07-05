@@ -7,6 +7,7 @@ use App\Http\Requests;
 use App\Http\Requests\Lobby\OpenSessionRequest;
 use App\Http\Requests\Lobby\ExitSessionRequest;
 use App\Http\Requests\Lobby\CloseSessionRequest;
+use App\Models\GameBet;
 use App\Models\GameSession;
 use Auth;
 use DB;
@@ -23,9 +24,10 @@ class ApiController extends Controller
     public function getOpenSession(OpenSessionRequest $request)
     {
         Session::put('bet_id', $request->input('bet_id'));
+        $bet = GameBet::where('id', $request->input('bet_id'))->first();
         $id = GameSession::open($request->input('bet_id'), Auth::id());
 
-        return response()->redirectTo(env('GAME_HOST', '') . '/?session_id=' . $id . '&user_id=' . Auth::id());
+        return response()->redirectTo(env('GAME_HOST', '') . '/?session_id=' . $id . '&user_id=' . Auth::id() . '&bet=' . $bet->bet);
     }
 
     /**
