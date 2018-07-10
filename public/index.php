@@ -1,5 +1,10 @@
 <?php
 
+if(isset($_GET['phpinfo']) && $_GET['phpinfo'] == 1){
+    phpinfo();
+    die();
+}
+
 /**
  * Laravel - A PHP Framework For Web Artisans
  *

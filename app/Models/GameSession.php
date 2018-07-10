@@ -228,16 +228,24 @@ class GameSession extends Model
          * @var GameSession $session
          */
         $session = GameSession::where('session_id', $sessionId)
+            ->whereNull('started_at')
             ->whereNull('ended_at')
             ->first();
 
         if($session){
-            $user = GameSessionUser::where('user_id', $userId)
+            $sessionUser = GameSessionUser::where('user_id', $userId)
                 ->where('session_id', $sessionId)
                 ->first();
 
-            if($user){
-                $user->delete();
+            $user = User::findOrFail($userId);
+
+            $gameBet = GameBet::findOrFail($session->bet_id);
+
+            if($sessionUser){
+                $sessionUser->delete();
+
+                $user->increment('credits', $gameBet->bet);
+
                 return true;
             }
         }
