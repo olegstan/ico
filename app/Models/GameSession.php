@@ -227,7 +227,7 @@ class GameSession extends Model
         /**
          * @var GameSession $session
          */
-        $session = GameSession::where('session_id', $sessionId)
+        $session = GameSession::where('id', $sessionId)
             ->whereNull('started_at')
             ->whereNull('ended_at')
             ->first();
