@@ -206,7 +206,7 @@ class GameSession extends Model
                         ->first();
 
                     $gameSession->update([
-                        'credits_after' => $userSess->credits - $bet->bet
+                        'credits_after' => $userSess->credits
                     ]);
                 }
             }
