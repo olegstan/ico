@@ -40,7 +40,7 @@
                                 <td field-key='game_name'>{{ $game->name }}</td>
                                 <td field-key='credits_before'>{{ $game->credits_before }}</td>
                                 <td field-key='bet'>{{ $game->bet }}</td>
-                                <td field-key='result'>{{ Auth::id() == $game->winner_id ? 'win' : 'lose' }}</td>
+                                <td field-key='result'>{{ Auth::id() == $game->winner_id ? 'win' : (isset($game->ended_at) ?? 'lose') }}</td>
                                 <td field-key='credits_after'>{{ $game->credits_after }}</td>
                                 <td field-key='started_at'>{{ $game->started_at }}</td>
                                 <td field-key='ended_at'>{{ $game->ended_at }}</td>
