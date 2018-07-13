@@ -34,7 +34,7 @@
                                             </div>
                                             <div class="owl-carousel" data-stage-padding="70" data-item-padding="10" data-loop="true">
                                                 @foreach($bets as $bet)
-                                                    <a class="angled-img" href="{{ $bet->openUrl()  }}">
+                                                    <div class="angled-img" onclick="window.open('{{ $bet->openUrl() }}', '{{ $bet->game->name }} {{ $bet->bet }} BTC', 'scrollbars=no,fullscreen=no,left=0,top=0,height=800,width=800')">
                                                         <div class="img">
                                                             <img src="{{ $bet->game->getLogo() }}" alt="">
                                                         </div>
@@ -45,7 +45,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                    </a>
+                                                    </div>
                                                 @endforeach
                                                 <div class="owl-nav">
                                                     <div class="owl-prev"></div>
