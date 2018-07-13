@@ -118,7 +118,7 @@ class GameSession extends Model
                             'credits_before' => $user->credits
                         ]);
 
-                        $user->decrement('credits', $gameBet->bet);
+
 
                         return $session->id;
                     }else{
@@ -132,7 +132,6 @@ class GameSession extends Model
                             'credits_before' => $user->credits
                         ]);
 
-                        $user->decrement('credits', $gameBet->bet);
 
                         return $session->id;
                     }
@@ -147,8 +146,6 @@ class GameSession extends Model
                     'session_id' => $session->id,
                     'credits_before' => $user->credits
                 ]);
-
-                $user->decrement('credits', $gameBet->bet);
 
                 return $session->id;
             }
@@ -262,9 +259,18 @@ class GameSession extends Model
          * @var GameSession $session
          */
         $session = GameSession::where('id', $sessionId)
+            ->whereNull('started_at')
             ->first();
 
         if($session){
+            $sessionUsers = GameSessionUser::where('session_id', $session->id)->all();
+
+            $gameBet = GameBet::findOrFail($session->bet_id);
+
+            foreach ($sessionUsers as $user){
+                $user->decrement('credits', $gameBet->bet);
+            }
+
             $session->update([
                 'started_at' => Carbon::now()
             ]);

@@ -23,7 +23,6 @@ class ApiController extends Controller
      */
     public function getOpenSession(OpenSessionRequest $request)
     {
-        Session::put('bet_id', $request->input('bet_id'));
         $bet = GameBet::where('id', $request->input('bet_id'))->first();
         $id = GameSession::open($request->input('bet_id'), Auth::id());
 
