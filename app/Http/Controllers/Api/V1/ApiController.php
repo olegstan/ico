@@ -7,6 +7,7 @@ use App\Http\Requests;
 use App\Http\Requests\Lobby\OpenSessionRequest;
 use App\Http\Requests\Lobby\ExitSessionRequest;
 use App\Http\Requests\Lobby\CloseSessionRequest;
+use App\Http\Requests\Lobby\StartSessionRequest;
 use App\Models\GameBet;
 use App\Models\GameSession;
 use Auth;
@@ -30,10 +31,10 @@ class ApiController extends Controller
     }
 
     /**
-     * @param CloseSessionRequest $request
+     * @param StartSessionRequest $request
      * @return \Illuminate\Http\JsonResponse
      */
-    public function getStartSession(CloseSessionRequest $request)
+    public function getStartSession(StartSessionRequest $request)
     {
         GameSession::start($request->input('session_id'));
 

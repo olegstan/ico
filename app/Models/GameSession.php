@@ -189,7 +189,9 @@ class GameSession extends Model
                 'win' => $win
             ]);
 
-            $gameSessions = GameSessionUser::where('session_id', $sessionId)->get()->all();
+            $gameSessions = GameSessionUser::where('session_id', $sessionId)
+                ->get()
+                ->all();
 
             foreach ($gameSessions as $gameSession)
             {
@@ -259,13 +261,18 @@ class GameSession extends Model
             ->first();
 
         if($session){
-            $sessionUsers = GameSessionUser::where('session_id', $session->id)->all();
+            $sessionUsers = GameSessionUser::where('session_id', $session->id)
+                ->get()
+                ->all();
 
             $gameBet = GameBet::findOrFail($session->bet_id);
 
-            foreach ($sessionUsers as $user)
+            foreach ($sessionUsers as $sessionUser)
             {
-                $user->decrement('credits', $gameBet->bet);
+                $user = User::where('id', $sessionUser->user_id)->first();
+                if($user){
+                    $user->decrement('credits', $gameBet->bet);
+                }
             }
 
             $session->update([
