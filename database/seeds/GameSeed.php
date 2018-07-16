@@ -17,7 +17,7 @@ class GameSeed extends Seeder
             $game = Game::create([
                 'name' => 'bomber',
                 'logo' => 'bomber.png',
-                'need_users' => rand(2, 4)
+                'need_users' => 4
             ]);
 
             $limitInner = rand(2, 6);

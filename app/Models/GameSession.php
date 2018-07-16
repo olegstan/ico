@@ -65,6 +65,8 @@ class GameSession extends Model
                 ->get()
                 ->first();
 
+
+
             if($session){
 //            //проверяем нет ли этого пользователя уже в сессии
                 $session = self::select([
@@ -107,7 +109,7 @@ class GameSession extends Model
                         })
                         ->whereRaw('g.id NOT IN (SELECT `game_sessions_users`.`session_id` FROM `game_sessions_users` WHERE `game_sessions_users`.`user_id` = ' . $userId . ')')
                         ->groupBy('g.id')
-                        ->havingRaw('count < ' . $game->need_users)
+//                        ->havingRaw('count < ' . $game->need_users)
                         ->get()
                         ->first();
 
@@ -234,14 +236,8 @@ class GameSession extends Model
                 ->where('session_id', $sessionId)
                 ->first();
 
-            $user = User::findOrFail($userId);
-
-            $gameBet = GameBet::findOrFail($session->bet_id);
-
             if($sessionUser){
                 $sessionUser->delete();
-
-                $user->increment('credits', $gameBet->bet);
 
                 return true;
             }
@@ -267,13 +263,15 @@ class GameSession extends Model
 
             $gameBet = GameBet::findOrFail($session->bet_id);
 
-            foreach ($sessionUsers as $user){
+            foreach ($sessionUsers as $user)
+            {
                 $user->decrement('credits', $gameBet->bet);
             }
 
             $session->update([
                 'started_at' => Carbon::now()
             ]);
+
             return true;
         }else{
             return false;
