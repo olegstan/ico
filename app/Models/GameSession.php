@@ -167,11 +167,6 @@ class GameSession extends Model
         $session = GameSession::where('id', $sessionId)
             ->first();
 
-        /**
-         * @var User $user
-         */
-        $user = User::where('id', $userId)
-            ->first();
 
         /**
          * @var GameBet $bet
@@ -195,6 +190,7 @@ class GameSession extends Model
 
             foreach ($gameSessions as $gameSession)
             {
+                $user = User::find($gameSession->user_id);
                 if($gameSession->user_id == $userId)
                 {
                     $user->increment('credits', $win);
